@@ -9,7 +9,7 @@
 
 class UProjectileMovementComponent;
 class USphereComponent;
-
+class UParticleSystem;
 
 UCLASS()
 class AFPSProjectile : public AActor
@@ -17,6 +17,9 @@ class AFPSProjectile : public AActor
 	GENERATED_BODY()
 
 protected:
+
+	UPROPERTY(EditDefaultsOnly, Category = "Cube")
+		UParticleSystem* ExplosionTemplate;
 
 	/** Sphere collision component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= "Projectile")
@@ -33,6 +36,9 @@ public:
 	/** called when projectile hits something */
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	UPROPERTY(EditDefaultsOnly, Category = "Cube")
+		TSubclassOf<AActor> CubeClass;
 
 	/** Returns CollisionComp subobject **/
 	USphereComponent* GetCollisionComp() const { return CollisionComp; }
