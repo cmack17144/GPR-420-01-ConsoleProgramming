@@ -10,6 +10,7 @@ class UInputComponent;
 class USkeletalMeshComponent;
 class UCameraComponent;
 class AFPSProjectile;
+class AFPSSuperProjectile;
 class USoundBase;
 class UAnimSequence;
 class AFPSBombActor;
@@ -41,6 +42,12 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category="Projectile")
 	TSubclassOf<AFPSProjectile> ProjectileClass;
 
+	UPROPERTY(EditDefaultsOnly, Category = "Projectile")
+		TSubclassOf<AFPSSuperProjectile> SuperProjectileClass;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Projectile")
+		float FullChargeTime;
+
 	UPROPERTY(EditDefaultsOnly, Category = "Bombs")
 	TSubclassOf<AFPSBombActor> BombClass;
 
@@ -57,7 +64,13 @@ protected:
 	/** Fires a projectile. */
 	void Fire();
 
+	void StartCharge();
+	void FireCharge();
+	float ChargeStartTime,LastFireTime;
+	bool Charging;
+
 	void SpawnBomb();
+
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
