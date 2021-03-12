@@ -33,12 +33,12 @@ public:
 
 	AFPSProjectile();
 
+	UPROPERTY(EditDefaultsOnly, Category = "Cube")
+		TSubclassOf<AActor> CubeClass;
+
 	/** called when projectile hits something */
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
-
-	UPROPERTY(EditDefaultsOnly, Category = "Cube")
-		TSubclassOf<AActor> CubeClass;
 
 	/** Returns CollisionComp subobject **/
 	USphereComponent* GetCollisionComp() const { return CollisionComp; }

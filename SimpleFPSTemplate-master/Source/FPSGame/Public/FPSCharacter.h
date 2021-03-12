@@ -13,7 +13,6 @@ class AFPSProjectile;
 class AFPSSuperProjectile;
 class USoundBase;
 class UAnimSequence;
-class AFPSBombActor;
 
 
 UCLASS()
@@ -48,9 +47,6 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Projectile")
 		float FullChargeTime;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Bombs")
-	TSubclassOf<AFPSBombActor> BombClass;
-
 	/** Sound to play each time we fire */
 	UPROPERTY(EditDefaultsOnly, Category="Gameplay")
 	USoundBase* FireSound;
@@ -61,15 +57,14 @@ public:
 
 protected:
 	
-	/** Fires a projectile. */
+	/** Fires a normal projectile. */
 	void Fire();
 
+	// super projectile firing
 	void StartCharge();
 	void FireCharge();
-	float ChargeStartTime,LastFireTime;
+	float ChargeStartTime, LastFireTime;
 	bool Charging;
-
-	void SpawnBomb();
 
 
 	/** Handles moving forward/backward */

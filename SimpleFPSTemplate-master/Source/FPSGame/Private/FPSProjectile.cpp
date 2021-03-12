@@ -33,6 +33,7 @@ AFPSProjectile::AFPSProjectile()
 	InitialLifeSpan = 3.0f;
 }
 
+
 void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
 	// Only add impulse and destroy projectile if we hit a physics
@@ -52,11 +53,11 @@ void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 				// get random offset
 				FVector offset = RngStream.VRand();
 				// spawn the projectile at location randomly offset from og actor location
-				AActor* Temp=GetWorld()->SpawnActor<AActor>((UClass*)CubeClass, OtherActor->GetActorLocation()+ offset, OtherActor->GetActorRotation());
-				
+				AActor* Temp = GetWorld()->SpawnActor<AActor>((UClass*)CubeClass, OtherActor->GetActorLocation() + offset, OtherActor->GetActorRotation());
+
 				// get the primitive component
 				UPrimitiveComponent* PrimComp = Cast<UPrimitiveComponent>(Temp->GetRootComponent());
-				
+
 				// set to smaller scale
 				PrimComp->SetWorldScale3D(Scale * 0.5f);
 				// set to a random color
@@ -89,11 +90,10 @@ void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 				}
 			}
 		}
-		
 
 		// destroy old one regardless
 		OtherActor->Destroy();
-		
+
 		Destroy();
 	}
 }

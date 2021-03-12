@@ -8,7 +8,6 @@
 #include "Components/CapsuleComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Animation/AnimSequence.h"
-#include "FPSBombActor.h"
 
 
 AFPSCharacter::AFPSCharacter()
@@ -31,7 +30,6 @@ AFPSCharacter::AFPSCharacter()
 	GunMeshComponent->CastShadow = false;
 	GunMeshComponent->SetupAttachment(Mesh1PComponent, "GripPoint");
 
-
 	LastFireTime = 0.0f;
 	Charging = false;
 }
@@ -47,8 +45,6 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAction("ChargeShot", IE_Pressed, this, &AFPSCharacter::StartCharge);
 	PlayerInputComponent->BindAction("ChargeShot", IE_Released, this, &AFPSCharacter::FireCharge);
 
-	PlayerInputComponent->BindAction("SpawnBomb", IE_Pressed, this, &AFPSCharacter::SpawnBomb);
-
 	PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
 
@@ -58,8 +54,10 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 void AFPSCharacter::StartCharge()
 {
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Trying to Start Charge"));
 	if (GetWorld()->GetTimeSeconds() - LastFireTime >= 1.0f)
 	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, TEXT("Starting Charge"));
 		ChargeStartTime = GetWorld()->GetTimeSeconds();
 		Charging = true;
 	}
@@ -68,8 +66,9 @@ void AFPSCharacter::StartCharge()
 void AFPSCharacter::FireCharge()
 {
 	// only fire if enough time has elapsed AND is currently charging
-	if (GetWorld()->GetTimeSeconds() - ChargeStartTime > FullChargeTime && Charging)
+	if (Charging && GetWorld()->GetTimeSeconds() - ChargeStartTime > FullChargeTime)
 	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, TEXT("Firing Charge"));
 		// try and fire a projectile
 		if (SuperProjectileClass)
 		{
@@ -82,6 +81,7 @@ void AFPSCharacter::FireCharge()
 			FActorSpawnParameters ActorSpawnParams;
 			ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 
+			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, TEXT("Spawning super proj"));
 			// spawn the projectile at the muzzle
 			GetWorld()->SpawnActor<AFPSSuperProjectile>(SuperProjectileClass, MuzzleLocation, MuzzleRotation, ActorSpawnParams);
 		}
@@ -142,11 +142,6 @@ void AFPSCharacter::Fire()
 			AnimInstance->PlaySlotAnimationAsDynamicMontage(FireAnimation, "Arms", 0.0f);
 		}
 	}
-}
-
-void AFPSCharacter::SpawnBomb()
-{
-	AFPSBombActor* MyBomb = GetWorld()->SpawnActor<AFPSBombActor>(BombClass, GetActorLocation(), GetActorRotation());
 }
 
 

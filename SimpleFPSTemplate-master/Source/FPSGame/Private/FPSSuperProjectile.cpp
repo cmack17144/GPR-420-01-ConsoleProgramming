@@ -1,6 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "FPSSuperProjectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
@@ -35,20 +32,28 @@ AFPSSuperProjectile::AFPSSuperProjectile()
 
 void AFPSSuperProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-	// Only add impulse and destroy projectile if we hit a physics
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Super proj OnHit"));
+
+	// Only add respond to something w physics enabled
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
 	{
-		// spawn the emitter
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionTemplate, GetActorLocation());
-
-		// get the neighbors
+		if (ExplosionTemplate)
+		{
+			// spawn the emitter
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionTemplate, GetActorLocation());
+		}
+		
+		/* - Get all the neighbors - */
+		// set up overlap query params
 		FCollisionObjectQueryParams QueryParams;
 		QueryParams.AddObjectTypesToQuery(ECC_WorldDynamic);
 		QueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);
 
+		// init the overlap shape
 		FCollisionShape CollShape;
-		CollShape.SetSphere(500.0f);
+		CollShape.SetSphere(500.0f); // TODO: Make scale w time
 
+		// do the overlap
 		TArray<FOverlapResult> OutOverlaps;
 		GetWorld()->OverlapMultiByObjectType(OutOverlaps, GetActorLocation(), FQuat::Identity, QueryParams, CollShape);
 
@@ -58,9 +63,7 @@ void AFPSSuperProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 			Result.Actor.Get()->Destroy();
 		}
 
-		// destroy old one regardless
-		//OtherActor->Destroy();
-
+		// destroy self
 		Destroy();
 	}
 }

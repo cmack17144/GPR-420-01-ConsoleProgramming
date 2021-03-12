@@ -16,8 +16,7 @@ class FPSGAME_API AFPSSuperProjectile : public AActor
 	GENERATED_BODY()
 	
 protected:
-
-	UPROPERTY(EditDefaultsOnly, Category = "Cube")
+	UPROPERTY(EditDefaultsOnly, Category = "Effects")
 		UParticleSystem* ExplosionTemplate;
 
 	/** Sphere collision component */
@@ -28,16 +27,13 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement")
 		UProjectileMovementComponent* ProjectileMovement;
 
-public:
-
+public:	
+	// Sets default values for this actor's properties
 	AFPSSuperProjectile();
 
 	/** called when projectile hits something */
 	UFUNCTION()
 		void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
-
-	UPROPERTY(EditDefaultsOnly, Category = "Cube")
-		TSubclassOf<AActor> CubeClass;
 
 	/** Returns CollisionComp subobject **/
 	USphereComponent* GetCollisionComp() const { return CollisionComp; }
