@@ -1,4 +1,5 @@
 #include "FPSSuperProjectile.h"
+#include "FPSCharacter.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -28,6 +29,10 @@ AFPSSuperProjectile::AFPSSuperProjectile()
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 5.0f;
+
+	//float ChargeValue = 0.0f;
+	//ChargeValue = AFPSCharacter::CTime;
+
 }
 
 void AFPSSuperProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -51,7 +56,8 @@ void AFPSSuperProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 
 		// init the overlap shape
 		FCollisionShape CollShape;
-		CollShape.SetSphere(500.0f); // TODO: Make scale w time
+		CollShape.SetSphere(ChargeValue);
+		//CollShape.SetSphere(500.0f); // TODO: Make scale w time
 
 		// do the overlap
 		TArray<FOverlapResult> OutOverlaps;
@@ -66,4 +72,9 @@ void AFPSSuperProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 		// destroy self
 		Destroy();
 	}
+}
+
+void AFPSSuperProjectile::SetCharge(float Charge)
+{
+	ChargeValue = Charge * Charge * 100.0f;
 }
