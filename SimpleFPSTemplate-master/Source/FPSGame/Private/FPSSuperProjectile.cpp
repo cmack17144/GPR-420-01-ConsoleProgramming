@@ -2,6 +2,7 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "FPSWeatherInformation.h"
 
 AFPSSuperProjectile::AFPSSuperProjectile()
 {
@@ -25,6 +26,9 @@ AFPSSuperProjectile::AFPSSuperProjectile()
 	ProjectileMovement->MaxSpeed = 3000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
+	// get the wind angle from the weather information object in the world
+	float ang = Cast<AFPSWeatherInformation>(UGameplayStatics::GetActorOfClass(GetWorld(), AFPSWeatherInformation::StaticClass()))->GetWindVector();
+	ProjectileMovement->AddForce(FVector(FMath::Cos(ang), 0.f,FMath::Sin(ang)));
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 5.0f;

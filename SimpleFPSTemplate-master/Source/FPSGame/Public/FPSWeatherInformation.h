@@ -9,6 +9,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Runtime/Online/HTTP/Public/Http.h"
+#include "Engine/DirectionalLight.h"
 #include "FPSWeatherInformation.generated.h"
 
 UCLASS()
@@ -23,9 +24,14 @@ public:
 	// http module object
 	FHttpModule* Http;
 
+	UFUNCTION()
+		float GetWindVector();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	FVector windVector = FVector::ZeroVector;		// wind vector
 
 public:
 	// Called every frame
@@ -36,9 +42,13 @@ public:
 
 private:
 	float temperature;		// temperature (C)
-	float windDirection;	// wind angle (deg)
 
-							// sends api request for weather
+	float windAngle = 0.f;	// wind angle (deg)
+
+
+	ADirectionalLight* sun;	// reference to sun
+
+	// sends api request for weather
 	UFUNCTION()
 		void GetWeatherData();
 };

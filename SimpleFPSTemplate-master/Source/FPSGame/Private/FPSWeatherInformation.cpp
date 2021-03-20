@@ -2,11 +2,14 @@
 
 
 #include "FPSWeatherInformation.h"
+#include "Kismet/GameplayStatics.h"
+#include "Components/LightComponent.h"
 
 // Sets default values
 AFPSWeatherInformation::AFPSWeatherInformation()
 {
 	Http = &FHttpModule::Get();
+	//windVector = FVector(0, 0, 0);
 }
 
 // Called when the game starts or when spawned
@@ -14,6 +17,9 @@ void AFPSWeatherInformation::BeginPlay()
 {
 	Super::BeginPlay();
 	GetWeatherData();
+	sun = Cast<ADirectionalLight>(UGameplayStatics::GetActorOfClass(GetWorld(), ADirectionalLight::StaticClass()));
+	if(!sun)
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Sun not found"));
 }
 
 void AFPSWeatherInformation::GetWeatherData()
@@ -31,7 +37,7 @@ void AFPSWeatherInformation::GetWeatherData()
 	// fire warning if process fails
 	if (!Request->ProcessRequest())
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("HTTP Request NOT prcessed"));
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("HTTP Request not processed"));
 	}
 }
 
@@ -51,19 +57,40 @@ void AFPSWeatherInformation::OnResponseReceived(FHttpRequestPtr Request, FHttpRe
 		// get the array of properties passed back in api call
 		TSharedPtr<FJsonObject> props = JsonObject->GetObjectField("properties");
 	
-		// get the temperature
+		// get the temperature from the json object
 		temperature = props->GetObjectField("temperature")->GetNumberField("value");
 
-		// get the wind direction
-		windDirection = props->GetObjectField("windDirection")->GetNumberField("value");
+		// set light temperature based so:
+		//   -15C -> 0K and 40C -> 12,000K
+		if (sun)
+		{
+			float sunTemp = (0.1873f * temperature + 4.5091f) * 1000.f;
+			sun->GetLightComponent()->Temperature = sunTemp;
+			GEngine->AddOnScreenDebugMessage(1, 5.0f, FColor::Cyan, FString::SanitizeFloat(sunTemp));
+		}
+		else {
+			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Sun not found"));
+		}
+
+		// get the wind angle from json object
+		windAngle = props->GetObjectField("windDirection")->GetNumberField("value");
+
+		// update components of windVector based on angle
+		windVector.X = FMath::Cos(windAngle);
+		windVector.Y = FMath::Sin(windAngle);
 
 		// output findings to screen
-		FString strOut = FString::SanitizeFloat(temperature) + "; " + FString::SanitizeFloat(windDirection);
-		GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::Green, strOut);
+		FString strOut = FString::SanitizeFloat(temperature) + "; " + FString::SanitizeFloat(windAngle);
+		GEngine->AddOnScreenDebugMessage(1, 5.0f, FColor::Green, strOut);
 	}
 	else 
 	{
 		// fire error
-		GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::Red, TEXT("Could not deserialize json response"));
+		GEngine->AddOnScreenDebugMessage(1, 5.0f, FColor::Red, TEXT("Could not deserialize json response"));
 	}
+}
+
+float AFPSWeatherInformation::GetWindVector()
+{
+	return windAngle;
 }
