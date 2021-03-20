@@ -34,6 +34,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	UCameraComponent* CameraComponent;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Custom", meta = (AllowPrivateAccess = "true"))
+		TArray<class AActor*> ActorsToDestroy;
+
 public:
 	AFPSCharacter();
 
@@ -55,8 +58,20 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Gameplay")
 	UAnimSequence* FireAnimation;
 
+	FTimerHandle Timer;
+	float CTime;
+
+	UFUNCTION()
+		float TestCharge();
+
 protected:
 	
+	UFUNCTION()
+		void BeginSequence();
+
+	UFUNCTION()
+		void GetChargeTime();
+
 	/** Fires a normal projectile. */
 	void Fire();
 
@@ -65,6 +80,7 @@ protected:
 	void FireCharge();
 	float ChargeStartTime, LastFireTime;
 	bool Charging;
+	//float ChargeValue;
 
 
 	/** Handles moving forward/backward */

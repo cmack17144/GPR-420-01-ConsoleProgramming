@@ -42,8 +42,8 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AFPSCharacter::Fire);
-	PlayerInputComponent->BindAction("ChargeShot", IE_Pressed, this, &AFPSCharacter::StartCharge);
-	PlayerInputComponent->BindAction("ChargeShot", IE_Released, this, &AFPSCharacter::FireCharge);
+	PlayerInputComponent->BindAction("ChargeShot", IE_Pressed, this, &AFPSCharacter::BeginSequence);
+	PlayerInputComponent->BindAction("ChargeShot", IE_Released, this, &AFPSCharacter::GetChargeTime);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
@@ -162,4 +162,74 @@ void AFPSCharacter::MoveRight(float Value)
 		// add movement in that direction
 		AddMovementInput(GetActorRightVector(), Value);
 	}
+}
+
+void AFPSCharacter::BeginSequence() 
+{
+	//FTimerHandle Timer;
+	Charging = true;
+	FTimerDelegate TimerDel;
+	//float RandomScale = FMath::RandRange(1.0f, 5.0f);
+	TimerDel.BindUFunction(this, FName("GetChargeTime"));
+	GetWorld()->GetTimerManager().SetTimer(Timer, TimerDel, 3.0f, false);
+	//UWorld* const World = GetWorld();
+	//if (World != nullptr) 
+	//{
+	//World.GetTimerManager().SetTimer(Timer, TimerDel, 3.0f, false);
+	//}
+}
+
+void AFPSCharacter::GetChargeTime()
+{
+	if (Charging)
+	{
+		float CTime = 0.0f;
+		CTime = GetWorldTimerManager().GetTimerElapsed(Timer);
+		if (CTime < 0)
+		{
+			CTime = 3.0f;
+		}
+		UE_LOG(LogTemp, Warning, TEXT("The charge value is: %f"), CTime);
+
+		if (SuperProjectileClass)
+		{
+			// Grabs location from the mesh that must have a socket called "Muzzle" in his skeleton
+			FVector MuzzleLocation = GunMeshComponent->GetSocketLocation("Muzzle");
+			// Use controller rotation which is our view direction in first person
+			FRotator MuzzleRotation = GetControlRotation();
+
+			//Set Spawn Collision Handling Override
+			FActorSpawnParameters ActorSpawnParams;
+			ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+
+			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, TEXT("Spawning super proj"));
+			// spawn the projectile at the muzzle
+			AFPSSuperProjectile* Projectile = GetWorld()->SpawnActor<AFPSSuperProjectile>(SuperProjectileClass, MuzzleLocation, MuzzleRotation, ActorSpawnParams);
+			Projectile->SetCharge(CTime);
+		}
+
+		// try and play the sound if specified
+		if (FireSound)
+		{
+			UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+		}
+
+		// try and play a firing animation if specified
+		if (FireAnimation)
+		{
+			// Get the animation object for the arms mesh
+			UAnimInstance* AnimInstance = Mesh1PComponent->GetAnimInstance();
+			if (AnimInstance)
+			{
+				AnimInstance->PlaySlotAnimationAsDynamicMontage(FireAnimation, "Arms", 0.0f);
+			}
+		}
+	}
+	Charging = false;
+}
+
+
+float AFPSCharacter::TestCharge()
+{
+	return CTime;
 }
