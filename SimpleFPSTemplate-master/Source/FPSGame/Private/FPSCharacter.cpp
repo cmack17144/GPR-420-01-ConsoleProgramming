@@ -206,6 +206,7 @@ void AFPSCharacter::GetChargeTime()
 			// spawn the projectile at the muzzle
 			AFPSSuperProjectile* Projectile = GetWorld()->SpawnActor<AFPSSuperProjectile>(SuperProjectileClass, MuzzleLocation, MuzzleRotation, ActorSpawnParams);
 			Projectile->SetCharge(CTime);
+			Projectile->LaunchBullet();
 		}
 
 		// try and play the sound if specified

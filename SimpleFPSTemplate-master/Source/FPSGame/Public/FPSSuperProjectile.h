@@ -27,6 +27,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement")
 		UProjectileMovementComponent* ProjectileMovement;
 
+	FVector windD;
+
+
 public:	
 	// Sets default values for this actor's properties
 	AFPSSuperProjectile();
@@ -39,6 +42,8 @@ public:
 		void SetCharge(float Charge);
 
 	float ChargeValue = 0.0f;
+
+	void LaunchBullet();
 
 	/** Returns CollisionComp subobject **/
 	USphereComponent* GetCollisionComp() const { return CollisionComp; }

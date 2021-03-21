@@ -16,10 +16,16 @@ AFPSWeatherInformation::AFPSWeatherInformation()
 void AFPSWeatherInformation::BeginPlay()
 {
 	Super::BeginPlay();
-	GetWeatherData();
+	
+	// find the sun
 	sun = Cast<ADirectionalLight>(UGameplayStatics::GetActorOfClass(GetWorld(), ADirectionalLight::StaticClass()));
-	if(!sun)
+	if (sun)
+		sun->GetLightComponent()->bUseTemperature = true;
+	else
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Sun not found"));
+	
+	// call api for weather data
+	GetWeatherData();
 }
 
 void AFPSWeatherInformation::GetWeatherData()
@@ -64,23 +70,24 @@ void AFPSWeatherInformation::OnResponseReceived(FHttpRequestPtr Request, FHttpRe
 		//   -15C -> 0K and 40C -> 12,000K
 		if (sun)
 		{
-			float sunTemp = (0.1873f * temperature + 4.5091f) * 1000.f;
-			sun->GetLightComponent()->Temperature = sunTemp;
-			GEngine->AddOnScreenDebugMessage(1, 5.0f, FColor::Cyan, FString::SanitizeFloat(sunTemp));
-		}
-		else {
-			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Sun not found"));
+			//float sunTemp = (0.1873f * temperature + 4.5091f) * 1000.f;
+			//sun->GetLightComponent()->Temperature = sunTemp;
+			sun->SetLightColor(FLinearColor::LerpUsingHSV(FLinearColor::Red, FLinearColor::Blue, 0.018f * temperature + 0.273f));
+			//UE_LOG(LogTemp, Warning, TEXT("sun temp: %f"), sunTemp);
 		}
 
 		// get the wind angle from json object
 		windAngle = props->GetObjectField("windDirection")->GetNumberField("value");
+
+		//windSpeed = props->GetObjectField("windSpeed")->GetNumberField("value");
+		windSpeed = 5.0f;
 
 		// update components of windVector based on angle
 		windVector.X = FMath::Cos(windAngle);
 		windVector.Y = FMath::Sin(windAngle);
 
 		// output findings to screen
-		FString strOut = FString::SanitizeFloat(temperature) + "; " + FString::SanitizeFloat(windAngle);
+		FString strOut = FString::SanitizeFloat(temperature) + "; " + FString::SanitizeFloat(windAngle) + " at " + FString::SanitizeFloat(windSpeed);
 		GEngine->AddOnScreenDebugMessage(1, 5.0f, FColor::Green, strOut);
 	}
 	else 
@@ -93,4 +100,9 @@ void AFPSWeatherInformation::OnResponseReceived(FHttpRequestPtr Request, FHttpRe
 float AFPSWeatherInformation::GetWindVector()
 {
 	return windAngle;
+}
+
+float AFPSWeatherInformation::GetWindSpeed()
+{
+	return windSpeed;
 }

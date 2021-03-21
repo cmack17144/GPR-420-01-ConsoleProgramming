@@ -27,6 +27,8 @@ public:
 	UFUNCTION()
 		float GetWindVector();
 
+	float GetWindSpeed();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -42,9 +44,8 @@ public:
 
 private:
 	float temperature;		// temperature (C)
-
-	float windAngle = 0.f;	// wind angle (deg)
-
+	float windAngle = 0.0f;	// wind angle (deg)
+	float windSpeed = 0.0f;	// wind speed (km/h)
 
 	ADirectionalLight* sun;	// reference to sun
 

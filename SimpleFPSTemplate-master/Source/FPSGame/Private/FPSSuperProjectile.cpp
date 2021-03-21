@@ -23,20 +23,17 @@ AFPSSuperProjectile::AFPSSuperProjectile()
 	// Use a ProjectileMovementComponent to govern this projectile's movement
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileComp"));
 	ProjectileMovement->UpdatedComponent = CollisionComp;
-	ProjectileMovement->InitialSpeed = 3000.f;
-	ProjectileMovement->MaxSpeed = 3000.f;
+	ProjectileMovement->MaxSpeed = 6000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
-	// get the wind angle from the weather information object in the world
-	float ang = Cast<AFPSWeatherInformation>(UGameplayStatics::GetActorOfClass(GetWorld(), AFPSWeatherInformation::StaticClass()))->GetWindVector();
-	ProjectileMovement->AddForce(FVector(FMath::Cos(ang), 0.f,FMath::Sin(ang)));
+	ProjectileMovement->bAutoActivate = false;
+
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 5.0f;
 
 	//float ChargeValue = 0.0f;
 	//ChargeValue = AFPSCharacter::CTime;
-
 }
 
 void AFPSSuperProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -76,6 +73,27 @@ void AFPSSuperProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 		// destroy self
 		Destroy();
 	}
+}
+
+void AFPSSuperProjectile::LaunchBullet()
+{
+	float iSpeed = 3000.0f;
+	// get the wind speed from the weather information object in the world
+	AFPSWeatherInformation* weatherHolder = Cast<AFPSWeatherInformation>(UGameplayStatics::GetActorOfClass(GetWorld(), AFPSWeatherInformation::StaticClass()));
+	if (weatherHolder)
+	{
+		float wSpeed = weatherHolder->GetWindSpeed();
+		iSpeed = wSpeed / 9.0f * 3000.0f;
+		UE_LOG(LogTemp, Warning, TEXT("%f => %f"), wSpeed, iSpeed);
+	}
+	else
+		UE_LOG(LogTemp, Warning, TEXT("weatherHolder not found"));
+
+	//ProjectileMovement->InitialSpeed = iSpeed;
+	ProjectileMovement->SetVelocityInLocalSpace(FVector(iSpeed, 0.0f, 0.0f));
+
+	// activate it
+	ProjectileMovement->Activate();
 }
 
 void AFPSSuperProjectile::SetCharge(float Charge)
