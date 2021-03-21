@@ -64,16 +64,21 @@ void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 				PrimComp->CreateAndSetMaterialInstanceDynamic(0)->SetVectorParameterValue("Color", FLinearColor::MakeRandomColor());
 			}
 		}
-		else {
+		else 
+		{
+			// spawn the emitter
 			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionTemplate, GetActorLocation());
 
+			// set query paramters
 			FCollisionObjectQueryParams QueryParams;
 			QueryParams.AddObjectTypesToQuery(ECC_WorldDynamic);
 			QueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);
 
+			// create the collision hull
 			FCollisionShape CollShape;
 			CollShape.SetSphere(500.0f);
 
+			// actually do the overlap
 			TArray<FOverlapResult> OutOverlaps;
 			GetWorld()->OverlapMultiByObjectType(OutOverlaps, GetActorLocation(), FQuat::Identity, QueryParams, CollShape);
 
@@ -82,6 +87,7 @@ void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 				UPrimitiveComponent* Overlap = Result.GetComponent();
 				if (Overlap && Overlap->IsSimulatingPhysics())
 				{
+					// set the material to random color
 					UMaterialInstanceDynamic* MatInst = Overlap->CreateAndSetMaterialInstanceDynamic(0);
 					if (MatInst)
 					{

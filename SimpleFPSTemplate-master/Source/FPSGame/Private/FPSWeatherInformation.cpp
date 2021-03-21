@@ -79,8 +79,8 @@ void AFPSWeatherInformation::OnResponseReceived(FHttpRequestPtr Request, FHttpRe
 		// get the wind angle from json object
 		windAngle = props->GetObjectField("windDirection")->GetNumberField("value");
 
-		//windSpeed = props->GetObjectField("windSpeed")->GetNumberField("value");
-		windSpeed = 5.0f;
+		windSpeed = props->GetObjectField("windSpeed")->GetNumberField("value");
+		//windSpeed = 5.0f;
 
 		// update components of windVector based on angle
 		windVector.X = FMath::Cos(windAngle);

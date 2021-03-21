@@ -6,15 +6,16 @@
 #include "GameFramework/GameModeBase.h"
 #include "FPSGameMode.generated.h"
 
+// multicast delegate
+DECLARE_MULTICAST_DELEGATE(FSuperProjectileFired)
+
 UCLASS()
 class AFPSGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
 public:
-
 	AFPSGameMode();
+
+	FSuperProjectileFired FiredDelegate;
 };
-
-
-

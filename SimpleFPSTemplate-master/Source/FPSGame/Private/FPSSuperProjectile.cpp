@@ -4,9 +4,10 @@
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "FPSWeatherInformation.h"
+#include "FPSGameMode.h"
 
-AFPSSuperProjectile::AFPSSuperProjectile()
-{
+
+AFPSSuperProjectile::AFPSSuperProjectile() {
 	// Use a sphere as a simple collision representation
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
 	CollisionComp->InitSphereRadius(5.0f);
@@ -48,7 +49,7 @@ void AFPSSuperProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 			// spawn the emitter
 			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionTemplate, GetActorLocation());
 		}
-		
+
 		/* - Get all the neighbors - */
 		// set up overlap query params
 		FCollisionObjectQueryParams QueryParams;
@@ -84,13 +85,21 @@ void AFPSSuperProjectile::LaunchBullet()
 	{
 		float wSpeed = weatherHolder->GetWindSpeed();
 		iSpeed = wSpeed / 9.0f * 3000.0f;
-		UE_LOG(LogTemp, Warning, TEXT("%f => %f"), wSpeed, iSpeed);
+		//UE_LOG(LogTemp, Warning, TEXT("%f => %f"), wSpeed, iSpeed);
 	}
-	else
-		UE_LOG(LogTemp, Warning, TEXT("weatherHolder not found"));
+	//else
+		//UE_LOG(LogTemp, Warning, TEXT("weatherHolder not found"));
 
 	//ProjectileMovement->InitialSpeed = iSpeed;
 	ProjectileMovement->SetVelocityInLocalSpace(FVector(iSpeed, 0.0f, 0.0f));
+
+	// get our game mode
+	AFPSGameMode* MyGameMode = Cast<AFPSGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	if (MyGameMode != nullptr)
+	{
+		// broadcast delegate
+		MyGameMode->FiredDelegate.Broadcast();
+	}
 
 	// activate it
 	ProjectileMovement->Activate();

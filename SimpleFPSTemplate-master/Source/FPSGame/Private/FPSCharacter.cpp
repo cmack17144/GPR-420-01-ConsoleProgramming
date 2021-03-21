@@ -52,6 +52,8 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 }
 
+
+// -- unused now -- //
 void AFPSCharacter::StartCharge()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Trying to Start Charge"));
@@ -63,6 +65,7 @@ void AFPSCharacter::StartCharge()
 	}
 }
 
+// -- unused -- //
 void AFPSCharacter::FireCharge()
 {
 	// only fire if enough time has elapsed AND is currently charging
@@ -127,10 +130,10 @@ void AFPSCharacter::Fire()
 	}
 
 	// try and play the sound if specified
-	if (FireSound)
-	{
-		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-	}
+	//if (FireSound)
+	//{
+	//	UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+	//}
 
 	// try and play a firing animation if specified
 	if (FireAnimation)
@@ -183,10 +186,12 @@ void AFPSCharacter::GetChargeTime()
 {
 	if (Charging)
 	{
+		// get current elapsed time
 		float CTime = 0.0f;
 		CTime = GetWorldTimerManager().GetTimerElapsed(Timer);
 		if (CTime < 0)
 		{
+			// if negative time reset to max
 			CTime = 3.0f;
 		}
 		UE_LOG(LogTemp, Warning, TEXT("The charge value is: %f"), CTime);
@@ -205,15 +210,17 @@ void AFPSCharacter::GetChargeTime()
 			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, TEXT("Spawning super proj"));
 			// spawn the projectile at the muzzle
 			AFPSSuperProjectile* Projectile = GetWorld()->SpawnActor<AFPSSuperProjectile>(SuperProjectileClass, MuzzleLocation, MuzzleRotation, ActorSpawnParams);
+			// set the charge time
 			Projectile->SetCharge(CTime);
+			// fire the bullet (activates projectile component)
 			Projectile->LaunchBullet();
 		}
 
 		// try and play the sound if specified
-		if (FireSound)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-		}
+		//if (FireSound)
+		//{
+		//	UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+		//}
 
 		// try and play a firing animation if specified
 		if (FireAnimation)
@@ -229,7 +236,7 @@ void AFPSCharacter::GetChargeTime()
 	Charging = false;
 }
 
-
+// -- unused -- //
 float AFPSCharacter::TestCharge()
 {
 	return CTime;
