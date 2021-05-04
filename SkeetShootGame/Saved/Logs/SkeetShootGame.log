@@ -1618,3 +1618,167 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.05.04-18.27.59:390][ 37]AssetCheck: New page: Asset Save: multiple assets
 [2021.05.04-18.27.59:390][ 37]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/OurContent/Maps/mainlevel_BuiltData.mainlevel_BuiltData
 [2021.05.04-18.27.59:390][ 37]LogContentValidation: Display: Validating World /Game/OurContent/Maps/mainlevel.mainlevel
+[2021.05.04-18.34.34:588][135]Running C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/SkeetShootGame.uproject" -game -rocket -progress
+[2021.05.04-18.34.34:892][135]Discovering modules, targets and source code for project...
+[2021.05.04-18.34.36:401][135]Binding IntelliSense data...
+[2021.05.04-18.34.44:657][135]Binding IntelliSense data... 100%
+[2021.05.04-18.34.44:657][135]Writing project files...
+[2021.05.04-18.34.47:072][135]Writing project files... 100%
+[2021.05.04-18.34.47:273][135]LogHotReload: Recompiling module SkeetShootGame...
+[2021.05.04-18.34.47:274][135]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2021.05.04-18.34.47:293][135]Candidate modules for hot reload:
+[2021.05.04-18.34.47:293][135]  SkeetShootGame
+[2021.05.04-18.34.47:293][135]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=SkeetShootGame,2649 SkeetShootGameEditor Win64 Development -Project="D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/SkeetShootGame.uproject" "D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/SkeetShootGame.uproject"  -IgnoreJunk]
+[2021.05.04-18.35.59:662][135]Using 'git status' to determine working set for adaptive non-unity build (D:\Repos\GPR-420-01-ConsoleProgramming).
+Creating makefile for SkeetShootGameEditor (no existing makefile)
+Parsing headers for SkeetShootGameEditor
+  Running UnrealHeaderTool "D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\SkeetShootGame.uproject" "D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\SkeetShootGameEditor\Development\SkeetShootGameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\tesla\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+Reflection code generated for SkeetShootGameEditor in 12.7778378 seconds
+Building SkeetShootGameEditor...
+Using Visual Studio 2019 14.28.29336 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Building 9 actions with 12 processes...
+  [1/9] Default.rc2
+  [2/9] SharedPCH.Engine.ShadowErrors.cpp
+  [3/9] SkeetShootGame.cpp
+  [4/9] MyCharacter.cpp
+  [5/9] SkeetShootGame.init.gen.cpp
+  [6/9] MyCharacter.gen.cpp
+  [7/9] UE4Editor-SkeetShootGame-2649.lib
+     Creating library D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-2649.lib and object D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-2649.exp
+  [8/9] UE4Editor-SkeetShootGame-2649.dll
+     Creating library D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-2649.suppressed.lib and object D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-2649.suppressed.exp
+  [9/9] SkeetShootGameEditor.target
+Total time in Parallel executor: 30.95 seconds
+Total execution time: 72.27 seconds
+
+[2021.05.04-18.35.59:662][135]CompilerResultsLog: New page: Compilation - May 4, 2021, 10:35:59 AM
+[2021.05.04-18.35.59:662][135]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Repos\GPR-420-01-ConsoleProgramming).
+[2021.05.04-18.35.59:662][135]CompilerResultsLog: Creating makefile for SkeetShootGameEditor (no existing makefile)
+[2021.05.04-18.35.59:662][135]CompilerResultsLog: Parsing headers for SkeetShootGameEditor
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   Running UnrealHeaderTool "D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\SkeetShootGame.uproject" "D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\SkeetShootGameEditor\Development\SkeetShootGameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\tesla\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.05.04-18.35.59:662][135]CompilerResultsLog: Reflection code generated for SkeetShootGameEditor in 12.7778378 seconds
+[2021.05.04-18.35.59:662][135]CompilerResultsLog: Building SkeetShootGameEditor...
+[2021.05.04-18.35.59:662][135]CompilerResultsLog: Using Visual Studio 2019 14.28.29336 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.05.04-18.35.59:662][135]CompilerResultsLog: Building 9 actions with 12 processes...
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   [1/9] Default.rc2
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   [2/9] SharedPCH.Engine.ShadowErrors.cpp
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   [3/9] SkeetShootGame.cpp
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   [4/9] MyCharacter.cpp
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   [5/9] SkeetShootGame.init.gen.cpp
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   [6/9] MyCharacter.gen.cpp
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   [7/9] UE4Editor-SkeetShootGame-2649.lib
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:      Creating library D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-2649.lib and object D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-2649.exp
+[2021.05.04-18.35.59:662][135]CompilerResultsLog:   [8/9] UE4Editor-SkeetShootGame-2649.dll
+[2021.05.04-18.35.59:663][135]CompilerResultsLog:      Creating library D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-2649.suppressed.lib and object D:\Repos\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-2649.suppressed.exp
+[2021.05.04-18.35.59:663][135]CompilerResultsLog:   [9/9] SkeetShootGameEditor.target
+[2021.05.04-18.35.59:663][135]CompilerResultsLog: Total time in Parallel executor: 30.95 seconds
+[2021.05.04-18.35.59:663][135]CompilerResultsLog: Total execution time: 72.27 seconds
+[2021.05.04-18.35.59:663][135]LogMainFrame: MainFrame: Module compiling took 72.388 seconds
+[2021.05.04-18.35.59:674][135]Reloading module SkeetShootGame after successful compile.
+[2021.05.04-18.35.59:709][135]LogClass: Could not find existing package /Script/SkeetShootGame for HotReload of class MyCharacter, assuming a new package.
+[2021.05.04-18.35.59:715][135]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SkeetShootGame' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2021.05.04-18.35.59:737][135]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2021.05.04-18.35.59:754][135]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0095 seconds. Added 3602 classes and 861 folders.
+[2021.05.04-18.35.59:848][135]LogSlate: Window 'Add C++ Class' being destroyed
+[2021.05.04-18.46.29:430][154]LogSlate: Window 'Message' being destroyed
+[2021.05.04-18.46.29:435][154]Message dialog closed, result: Yes, title: Message, text: Would you like to apply the changes of the modified material to the original material?
+/Game/OurContent/Art/Materials/M_Grass.M_Grass
+(Selecting 'No' will cause all changes to be lost!)
+[2021.05.04-18.46.29:897][154]LogMaterial: Display: Missing cached shader map for material M_Grass, compiling. 
+[2021.05.04-18.46.29:920][154]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 11
+[2021.05.04-18.46.29:920][154]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 10
+[2021.05.04-18.46.29:920][154]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 9
+[2021.05.04-18.46.29:920][154]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 8
+[2021.05.04-18.46.29:920][154]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.05.04-18.46.29:920][154]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 6
+[2021.05.04-18.46.29:920][154]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 5
+[2021.05.04-18.46.29:920][154]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 4
+[2021.05.04-18.46.29:937][154]LogMaterial: Display: Missing cached shader map for material M_Grass, compiling. 
+[2021.05.04-18.46.30:056][154]LogUObjectHash: Compacting FUObjectHashTables data took   5.83ms
+[2021.05.04-18.46.30:062][154]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.04-18.46.31:187][154]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 26
+[2021.05.04-18.46.31:187][154]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 25
+[2021.05.04-18.46.31:187][154]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 24
+[2021.05.04-18.46.31:187][154]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 23
+[2021.05.04-18.46.31:187][154]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 22
+[2021.05.04-18.46.31:187][154]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 21
+[2021.05.04-18.46.31:187][154]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 18
+[2021.05.04-18.46.31:187][154]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 15
+[2021.05.04-18.46.31:396][154]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 13
+[2021.05.04-18.46.31:396][154]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 11
+[2021.05.04-18.46.31:396][154]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 9
+[2021.05.04-18.46.31:396][154]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 7
+[2021.05.04-18.46.31:396][154]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 5
+[2021.05.04-18.46.31:398][154]TextureStreamingBuild: Display: Compiling optional shaders took 1.342 seconds.
+[2021.05.04-18.46.31:443][154]LogUObjectHash: Compacting FUObjectHashTables data took   5.17ms
+[2021.05.04-18.46.32:367][154]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 3
+[2021.05.04-18.46.32:454][154]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 2
+[2021.05.04-18.46.32:488][154]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 1
+[2021.05.04-18.46.32:557][154]LogSlate: Window 'Message' being destroyed
+[2021.05.04-18.46.32:561][154]Message dialog closed, result: Yes, title: Message, text: Would you like to apply the changes of the modified material to the original material?
+/Game/OurContent/Art/Materials/M_Ground.M_Ground
+(Selecting 'No' will cause all changes to be lost!)
+[2021.05.04-18.46.33:108][154]LogMaterial: Display: Missing cached shader map for material M_Ground, compiling. 
+[2021.05.04-18.46.33:131][154]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 11
+[2021.05.04-18.46.33:131][154]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 10
+[2021.05.04-18.46.33:131][154]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 9
+[2021.05.04-18.46.33:131][154]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 8
+[2021.05.04-18.46.33:131][154]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.05.04-18.46.33:131][154]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 6
+[2021.05.04-18.46.33:131][154]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 5
+[2021.05.04-18.46.33:131][154]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 4
+[2021.05.04-18.46.33:154][154]LogMaterial: Display: Missing cached shader map for material M_Ground, compiling. 
+[2021.05.04-18.46.33:228][154]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2021.05.04-18.46.33:237][154]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.04-18.46.33:804][154]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 26
+[2021.05.04-18.46.33:804][154]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 25
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 24
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 23
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 22
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 21
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 18
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 15
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 13
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 11
+[2021.05.04-18.46.34:363][154]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 9
+[2021.05.04-18.46.34:408][154]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 7
+[2021.05.04-18.46.34:408][154]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 6
+[2021.05.04-18.46.34:411][154]TextureStreamingBuild: Display: Compiling optional shaders took 1.182 seconds.
+[2021.05.04-18.46.34:448][154]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2021.05.04-18.46.34:493][154]LogSlate: Window 'BP_SkeetShooter' being destroyed
+[2021.05.04-18.46.34:496][154]LogSlate: Window 'BP_SkeetShooter' being destroyed
+[2021.05.04-18.46.34:647][154]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-18.46.34:647][154]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-18.46.34:731][154]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-18.46.34:731][154]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-18.46.34:769][154]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-18.46.34:769][154]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-18.46.34:914][154]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.05.04-18.46.35:193][164]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 4
+[2021.05.04-18.46.35:670][188]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 3
+[2021.05.04-18.46.35:788][194]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 2
+[2021.05.04-18.46.35:876][199]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 1
+[2021.05.04-18.46.41:957][551]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/OurContent/Blueprints/BP_Projectile.BP_Projectile
+[2021.05.04-18.47.15:617][130]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2021.05.04-18.47.15:620][130]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/OurContent/Maps/mainlevel' took 0.053
+[2021.05.04-18.47.15:622][130]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/OurContent/Art/Materials/M_Ground] ([1] browsable assets)...
+[2021.05.04-18.47.15:651][130]OBJ SavePackage:     Rendered thumbnail for [Material /Game/OurContent/Art/Materials/M_Ground.M_Ground]
+[2021.05.04-18.47.15:651][130]OBJ SavePackage: Finished generating thumbnails for package [/Game/OurContent/Art/Materials/M_Ground]
+[2021.05.04-18.47.15:660][130]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/M_Ground_Auto101399AE64834DF8568BE35BC7CB5A47D.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/Autosaves/Game/OurContent/Art/Materials/M_Ground_Auto1.uasset'
+[2021.05.04-18.47.15:662][130]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/OurContent/Art/Materials/M_Grass] ([1] browsable assets)...
+[2021.05.04-18.47.15:692][130]OBJ SavePackage:     Rendered thumbnail for [Material /Game/OurContent/Art/Materials/M_Grass.M_Grass]
+[2021.05.04-18.47.15:692][130]OBJ SavePackage: Finished generating thumbnails for package [/Game/OurContent/Art/Materials/M_Grass]
+[2021.05.04-18.47.15:704][130]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/M_Grass_Auto14B4AC2E84CE94EB5C2C3E79D82249E5F.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/Autosaves/Game/OurContent/Art/Materials/M_Grass_Auto1.uasset'
+[2021.05.04-18.47.15:704][130]LogFileHelpers: Auto-saving content packages took 0.084
+[2021.05.04-18.48.05:779][318]LogVSAccessor: Warning: Couldn't goto line number '1' in 'C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h'
+[2021.05.04-18.48.13:463][776]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.05.04-18.49.14:116][537]LogSlate: Window 'Pick Parent Class' being destroyed
+[2021.05.04-18.49.14:123][537]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2021.05.04-18.49.14:240][537]LogContentBrowser: Creating deferred item: NewBlueprint
+[2021.05.04-18.49.20:118][879]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_MyCharacter
+[2021.05.04-18.49.20:122][879]LogContentBrowser: End creating deferred item NewBlueprint
+[2021.05.04-18.49.21:699][973]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/OurContent/Blueprints/BP_MyCharacter.BP_MyCharacter
+[2021.05.04-18.49.27:977][319]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/OurContent/Blueprints/BP_MyCharacter" FILE="D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/BP_MyCharacter.uasset" SILENT=true
+[2021.05.04-18.49.28:085][319]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/BP_MyCharacter61E795CF476929B9F0D3E5BD2FCC6A13.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/BP_MyCharacter.uasset'
+[2021.05.04-18.49.28:096][319]AssetCheck: New page: Asset Save: BP_MyCharacter
+[2021.05.04-18.49.28:096][319]LogContentValidation: Display: Validating Blueprint /Game/OurContent/Blueprints/BP_MyCharacter.BP_MyCharacter
