@@ -1137,3 +1137,92 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.05.05-20.01.51:013][678]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
 [2021.05.05-20.01.51:143][678]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0150 seconds. Added 3603 classes and 861 folders.
 [2021.05.05-20.01.51:143][678]Display: HotReload took  9.4s.
+[2021.05.05-20.03.11:131][313]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/OurContent/Blueprints/LB_LeaderBoard.LB_LeaderBoard
+[2021.05.05-20.05.56:902][328]BlueprintLog: New page: Compile LB_LeaderBoard
+[2021.05.05-20.05.57:064][328]LogUObjectHash: Compacting FUObjectHashTables data took   5.57ms
+[2021.05.05-20.05.57:143][328]LogSavePackage: Moving '../../../../../../Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/LB_LeaderBoard56ADC1BD4527A5047E4836B663476793.tmp' to '../../../../../../Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/LB_LeaderBoard.uasset'
+[2021.05.05-20.05.57:182][328]AssetCheck: New page: Asset Save: LB_LeaderBoard
+[2021.05.05-20.05.57:182][328]LogContentValidation: Display: Validating WidgetBlueprint /Game/OurContent/Blueprints/LB_LeaderBoard.LB_LeaderBoard
+[2021.05.05-20.06.06:247][749]Candidate modules for hot reload:
+[2021.05.05-20.06.06:247][749]  SkeetShootGame
+[2021.05.05-20.06.06:248][749]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=SkeetShootGame,8309 SkeetShootGameEditor Win64 Development -Project="C:/Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/SkeetShootGame.uproject" "C:/Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/SkeetShootGame.uproject"  -IgnoreJunk]
+[2021.05.05-20.06.06:252][749]Warning: Starting HotReload took  0.0s.
+[2021.05.05-20.06.09:564][881]CompilerResultsLog: New page: Compilation - May 5, 2021, 12:06:09 PM
+[2021.05.05-20.06.09:565][881]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\weird\OneDrive\Desktop\ConsoleProgramming\GPR-420-01-ConsoleProgramming).
+[2021.05.05-20.06.09:565][881]CompilerResultsLog: Building SkeetShootGameEditor...
+[2021.05.05-20.06.09:565][881]CompilerResultsLog: Using Visual Studio 2019 14.28.29337 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.05.05-20.06.09:565][881]CompilerResultsLog: Building 3 actions with 12 processes...
+[2021.05.05-20.06.09:565][881]CompilerResultsLog:   [1/3] UE4Editor-SkeetShootGame-8309.lib
+[2021.05.05-20.06.09:565][881]CompilerResultsLog:      Creating library C:\Users\weird\OneDrive\Desktop\ConsoleProgramming\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-8309.lib and object C:\Users\weird\OneDrive\Desktop\ConsoleProgramming\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-8309.exp
+[2021.05.05-20.06.09:565][881]CompilerResultsLog:   [2/3] UE4Editor-SkeetShootGame-8309.dll
+[2021.05.05-20.06.09:565][881]CompilerResultsLog:      Creating library C:\Users\weird\OneDrive\Desktop\ConsoleProgramming\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-8309.suppressed.lib and object C:\Users\weird\OneDrive\Desktop\ConsoleProgramming\GPR-420-01-ConsoleProgramming\SkeetShootGame\Intermediate\Build\Win64\UE4Editor\Development\SkeetShootGame\UE4Editor-SkeetShootGame-8309.suppressed.exp
+[2021.05.05-20.06.09:565][881]CompilerResultsLog:   [3/3] SkeetShootGameEditor.target
+[2021.05.05-20.06.09:565][881]CompilerResultsLog: Total time in Parallel executor: 1.86 seconds
+[2021.05.05-20.06.09:565][881]CompilerResultsLog: Total execution time: 3.16 seconds
+[2021.05.05-20.06.09:565][881]LogMainFrame: MainFrame: Module compiling took 3.324 seconds
+[2021.05.05-20.06.11:852][881]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SkeetShootGame' in 0.0002 seconds. Added 2 classes and 2 folders.
+[2021.05.05-20.06.11:856][881]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2021.05.05-20.06.11:999][881]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0132 seconds. Added 3603 classes and 861 folders.
+[2021.05.05-20.06.12:000][881]Display: HotReload took  5.8s.
+[2021.05.05-20.06.14:097][981]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.05-20.06.14:129][981]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.05-20.06.14:130][981]PIE: New page: PIE session: mainlevel (May 5, 2021, 12:06:14 PM)
+[2021.05.05-20.06.14:135][981]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.05.05-20.06.14:137][981]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.05.05-20.06.14:139][981]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.05-20.06.14:143][981]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003540s)
+[2021.05.05-20.06.14:145][981]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.05-20.06.14:145][981]LogPlayLevel: PIE: World Init took: (0.002024s)
+[2021.05.05-20.06.14:146][981]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.006798s)
+[2021.05.05-20.06.14:235][981]LogUObjectHash: Compacting FUObjectHashTables data took   3.72ms
+[2021.05.05-20.06.14:239][981]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2021.05.05-20.06.14:239][981]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.05-20.06.14:239][981]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.05-20.06.14:239][981]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.05-20.06.14:239][981]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.05-20.06.14:239][981]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.05-20.06.14:239][981]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.05-20.06.14:239][981]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.05-20.06.14:239][981]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.05-20.06.14:239][981]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.05-20.06.14:240][981]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.05-20.06.14:244][981]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.05-20.06.14:244][981]LogAudioMixer: Display: 1: FrontRight
+[2021.05.05-20.06.14:264][981]LogAudioMixer: Display: Using Audio Device Speaker/Headphone (Realtek(R) Audio)
+[2021.05.05-20.06.14:265][981]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.05-20.06.14:265][981]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.05-20.06.14:265][981]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.05-20.06.14:265][981]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.05-20.06.14:265][981]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.05-20.06.14:265][981]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.05-20.06.14:282][981]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.05-20.06.14:282][981]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.05-20.06.14:282][981]LogInit: FAudioDevice initialized.
+[2021.05.05-20.06.14:282][981]LogAudio: Display: Audio Device (ID: 2) registered with world 'mainlevel'.
+[2021.05.05-20.06.14:310][981]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.05-20.06.14:312][981]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.05-16.06.14
+[2021.05.05-20.06.14:313][981]LogWorld: Bringing up level for play took: 0.001935
+[2021.05.05-20.06.14:314][981]LogOnline: OSS: Creating online subsystem instance for: :Context_27
+[2021.05.05-20.06.14:379][981]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2021.05.05-20.06.14:393][981]PIE: Server logged in
+[2021.05.05-20.06.14:396][981]PIE: Play in editor total start time 0.29 seconds.
+[2021.05.05-20.06.41:137][545]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-20.06.41:137][545]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.05-20.06.41:138][545]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-20.06.41:138][545]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-20.06.41:150][545]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.05-20.06.41:156][545]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-20.06.41:183][545]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.05-20.06.41:198][545]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-20.06.41:200][545]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-20.06.41:220][545]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-20.06.41:263][545]LogUObjectHash: Compacting FUObjectHashTables data took   4.44ms
+[2021.05.05-20.06.41:298][546]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2021.05.05-20.07.37:910][721]LogVSAccessor: Warning: Couldn't goto line number '1' in 'C:/Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/Source/SkeetShootGame/MyCharacter.h'
+[2021.05.05-20.07.37:910][721]LogVSAccessor: Warning: Couldn't open file 'C:/Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/Source/SkeetShootGame/MyCharacter.cpp'.
+[2021.05.05-20.08.26:818][686]LogUObjectHash: Compacting FUObjectHashTables data took   3.43ms
+[2021.05.05-20.08.26:834][686]LogSavePackage: Moving '../../../../../../Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/mainlevelC31E0B7047DFD24BBEB10A89B85FF521.tmp' to '../../../../../../Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Maps/mainlevel.umap'
+[2021.05.05-20.08.27:385][686]LogSavePackage: Moving '../../../../../../Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/mainlevel_BuiltData3A35095C4DCAB3E638D236BD04BA9CF9.tmp' to '../../../../../../Users/weird/OneDrive/Desktop/ConsoleProgramming/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Maps/mainlevel_BuiltData.uasset'
+[2021.05.05-20.08.27:418][686]AssetCheck: New page: Asset Save: multiple assets
+[2021.05.05-20.08.27:418][686]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/OurContent/Maps/mainlevel_BuiltData.mainlevel_BuiltData
+[2021.05.05-20.08.27:419][686]LogContentValidation: Display: Validating World /Game/OurContent/Maps/mainlevel.mainlevel
