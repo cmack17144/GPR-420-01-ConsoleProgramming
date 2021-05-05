@@ -4,26 +4,18 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Camera/CameraComponent.h"
 #include "MyCharacter.generated.h"
 
-class UCameraComponent;
 
 UCLASS()
 class SKEETSHOOTGAME_API AMyCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-	// gun mesh
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		USkeletalMeshComponent* FP_Gun;
-
-	// muzzle component
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		USceneComponent* FP_MuzzleLocation;
-
 	// camera
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		UCameraComponent* FirstPersonCameraComponent;
+		UCameraComponent* CameraComponent;
 
 public:
 	AMyCharacter();
@@ -31,26 +23,10 @@ public:
 protected:
 	virtual void BeginPlay();
 
-public:
-
-	/** Projectile class to spawn */
-	UPROPERTY(EditDefaultsOnly, Category = Projectile)
-		TSubclassOf<class ANetworkTestProjectile> Projectile;
-
-	/** Sound to play each time we fire */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-		USoundBase* FireSound;
-
 protected:
-
-	// Fires projectile
-	void OnFire();
 
 	void MoveForward(float Val);
 	void MoveRight(float Val);
-
-	void LookAround();
-	void LookUp();
 
 
 	// APawn interface
@@ -59,5 +35,5 @@ protected:
 
 public:
 	/** Returns FirstPersonCameraComponent subobject **/
-	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
+	UCameraComponent* GetFirstPersonCameraComponent() const { return CameraComponent; }
 };
