@@ -2767,3 +2767,1026 @@ Make sure 'BP_MyCharacter_C' has been compiled for  Set ControlsEnabled
 [2021.05.06-20.24.21:897][623]LogUObjectHash: Compacting FUObjectHashTables data took   4.83ms
 [2021.05.06-20.24.23:685][727]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
 [2021.05.06-20.24.27:568][862]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2021.05.06-20.30.09:247][658]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.30.09:353][658]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.30.09:353][658]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:30:09 PM)
+[2021.05.06-20.30.09:353][658]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.30.09:356][658]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003372s)
+[2021.05.06-20.30.09:358][658]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.30.09:358][658]LogPlayLevel: PIE: World Init took: (0.001387s)
+[2021.05.06-20.30.09:358][658]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.004872s)
+[2021.05.06-20.30.09:394][658]LogUObjectHash: Compacting FUObjectHashTables data took   3.58ms
+[2021.05.06-20.30.09:407][658]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2021.05.06-20.30.09:407][658]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.30.09:407][658]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.30.09:408][658]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.30.09:408][658]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.30.09:408][658]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.30.09:408][658]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.30.09:408][658]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.30.09:408][658]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.30.09:408][658]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.30.09:408][658]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.30.09:411][658]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.30.09:411][658]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.30.09:411][658]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.30.09:411][658]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.30.09:411][658]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.30.09:411][658]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.30.09:411][658]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.30.09:411][658]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.30.09:438][658]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.30.09:439][658]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.30.09:439][658]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.30.09:439][658]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.30.09:439][658]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.30.09:439][658]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.30.09:439][658]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.30.09:454][658]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.30.09:454][658]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.30.09:454][658]LogInit: FAudioDevice initialized.
+[2021.05.06-20.30.09:454][658]LogAudio: Display: Audio Device (ID: 20) registered with world 'mainlevel'.
+[2021.05.06-20.30.09:463][658]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.30.09:464][658]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.30.09
+[2021.05.06-20.30.09:464][658]LogWorld: Bringing up level for play took: 0.000573
+[2021.05.06-20.30.09:464][658]LogOnline: OSS: Creating online subsystem instance for: :Context_43
+[2021.05.06-20.30.09:468][658]PIE: Server logged in
+[2021.05.06-20.30.09:469][658]PIE: Play in editor total start time 0.117 seconds.
+[2021.05.06-20.30.12:955][866]LogBlueprintUserMessages: [BP_MyCharacter_C_0] sdgs
+[2021.05.06-20.30.22:861][459]LogBlueprintUserMessages: [BP_Projectile_C_3] Hit physics object
+[2021.05.06-20.30.23:312][486]LogBlueprintUserMessages: [BP_Projectile_C_6] Hit physics object
+[2021.05.06-20.30.23:944][524]LogBlueprintUserMessages: [BP_Projectile_C_8] Hit physics object
+[2021.05.06-20.30.24:112][534]LogBlueprintUserMessages: [BP_Projectile_C_9] Hit physics object
+[2021.05.06-20.30.24:661][567]LogBlueprintUserMessages: [BP_Projectile_C_13] Hit physics object
+[2021.05.06-20.30.25:327][607]LogBlueprintUserMessages: [BP_Projectile_C_16] Hit physics object
+[2021.05.06-20.30.25:478][616]LogBlueprintUserMessages: [BP_Projectile_C_17] Hit physics object
+[2021.05.06-20.30.25:828][637]LogBlueprintUserMessages: [BP_Projectile_C_19] Hit physics object
+[2021.05.06-20.30.27:147][716]LogBlueprintUserMessages: [BP_Projectile_C_25] Hit physics object
+[2021.05.06-20.30.27:314][726]LogBlueprintUserMessages: [BP_Projectile_C_26] Hit physics object
+[2021.05.06-20.30.27:513][738]LogBlueprintUserMessages: [BP_Projectile_C_27] Hit physics object
+[2021.05.06-20.30.30:016][888]LogBlueprintUserMessages: [BP_Projectile_C_38] Hit physics object
+[2021.05.06-20.30.30:130][895]LogBlueprintUserMessages: [BP_Projectile_C_39] Hit physics object
+[2021.05.06-20.30.30:680][928]LogBlueprintUserMessages: [BP_Projectile_C_41] Hit physics object
+[2021.05.06-20.30.30:831][937]LogBlueprintUserMessages: [BP_Projectile_C_42] Hit physics object
+[2021.05.06-20.30.31:680][988]LogBlueprintUserMessages: [BP_Projectile_C_46] Hit physics object
+[2021.05.06-20.30.32:713][ 50]LogBlueprintUserMessages: [BP_Projectile_C_52] Hit physics object
+[2021.05.06-20.30.33:930][123]LogBlueprintUserMessages: [BP_Projectile_C_57] Hit physics object
+[2021.05.06-20.30.34:197][139]LogBlueprintUserMessages: [BP_Projectile_C_58] Hit physics object
+[2021.05.06-20.30.35:013][188]LogBlueprintUserMessages: [BP_Projectile_C_62] Hit physics object
+[2021.05.06-20.30.36:132][255]LogBlueprintUserMessages: [BP_Projectile_C_67] Hit physics object
+[2021.05.06-20.30.36:914][302]LogBlueprintUserMessages: [BP_Projectile_C_71] Hit physics object
+[2021.05.06-20.30.38:062][365]LogBlueprintUserMessages: [BP_Projectile_C_74] Hit physics object
+[2021.05.06-20.30.50:199][ 90]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.30.50:199][ 90]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.30.50:199][ 90]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.30.50:200][ 90]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.30.50:210][ 90]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.30.50:221][ 90]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.30.50:252][ 90]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.30.50:252][ 90]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.30.50:253][ 90]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.30.50:282][ 90]LogUObjectHash: Compacting FUObjectHashTables data took   3.14ms
+[2021.05.06-20.30.50:333][ 91]LogPlayLevel: Display: Destroying online subsystem :Context_43
+[2021.05.06-20.31.05:848][976]BlueprintLog: New page: Compile BP_MyCharacter
+[2021.05.06-20.31.05:915][976]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2021.05.06-20.31.05:961][976]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/OurContent/Blueprints/BP_MyCharacter" FILE="D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/BP_MyCharacter.uasset" SILENT=true
+[2021.05.06-20.31.06:019][976]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/BP_MyCharacter02634E164E08F1FDD472359A289AAB42.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/BP_MyCharacter.uasset'
+[2021.05.06-20.31.06:033][976]AssetCheck: New page: Asset Save: BP_MyCharacter
+[2021.05.06-20.31.06:033][976]LogContentValidation: Display: Validating Blueprint /Game/OurContent/Blueprints/BP_MyCharacter.BP_MyCharacter
+[2021.05.06-20.31.06:319][986]LogUObjectHash: Compacting FUObjectHashTables data took   4.31ms
+[2021.05.06-20.31.06:331][986]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/mainlevelA3AE6A1A4EF88A5D9DDE01AAEE3DE736.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Maps/mainlevel.umap'
+[2021.05.06-20.31.06:340][986]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/OurContent/Maps/mainlevel_BuiltData" FILE="D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Maps/mainlevel_BuiltData.uasset" SILENT=true
+[2021.05.06-20.31.06:731][986]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/mainlevel_BuiltDataDC2ED0DA4B7205EF427159A3BE33A3CF.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Maps/mainlevel_BuiltData.uasset'
+[2021.05.06-20.31.06:742][986]AssetCheck: New page: Asset Save: multiple assets
+[2021.05.06-20.31.06:742][986]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/OurContent/Maps/mainlevel_BuiltData.mainlevel_BuiltData
+[2021.05.06-20.31.06:742][986]LogContentValidation: Display: Validating World /Game/OurContent/Maps/mainlevel.mainlevel
+[2021.05.06-20.31.10:474][209]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.31.10:581][209]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.31.10:581][209]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:31:10 PM)
+[2021.05.06-20.31.10:581][209]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.31.10:583][209]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001753s)
+[2021.05.06-20.31.10:584][209]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.31.10:584][209]LogPlayLevel: PIE: World Init took: (0.001000s)
+[2021.05.06-20.31.10:584][209]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.002845s)
+[2021.05.06-20.31.10:615][209]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
+[2021.05.06-20.31.10:618][209]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2021.05.06-20.31.10:618][209]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.31.10:618][209]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.31.10:618][209]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.31.10:618][209]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.31.10:618][209]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.31.10:618][209]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.31.10:618][209]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.31.10:618][209]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.31.10:618][209]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.31.10:618][209]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.31.10:622][209]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.31.10:622][209]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.31.10:622][209]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.31.10:622][209]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.31.10:622][209]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.31.10:622][209]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.31.10:622][209]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.31.10:622][209]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.31.10:648][209]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.31.10:648][209]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.31.10:648][209]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.31.10:648][209]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.31.10:649][209]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.31.10:649][209]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.31.10:649][209]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.31.10:662][209]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.31.10:662][209]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.31.10:662][209]LogInit: FAudioDevice initialized.
+[2021.05.06-20.31.10:662][209]LogAudio: Display: Audio Device (ID: 21) registered with world 'mainlevel'.
+[2021.05.06-20.31.10:666][209]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.31.10:667][209]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.31.10
+[2021.05.06-20.31.10:667][209]LogWorld: Bringing up level for play took: 0.000595
+[2021.05.06-20.31.10:668][209]LogOnline: OSS: Creating online subsystem instance for: :Context_44
+[2021.05.06-20.31.10:671][209]PIE: Server logged in
+[2021.05.06-20.31.10:672][209]PIE: Play in editor total start time 0.092 seconds.
+[2021.05.06-20.31.13:735][392]LogBlueprintUserMessages: [BP_MyCharacter_C_0] TEST
+[2021.05.06-20.31.18:351][669]LogBlueprintUserMessages: [BP_Projectile_C_1] Hit physics object
+[2021.05.06-20.31.18:718][691]LogBlueprintUserMessages: [BP_Projectile_C_3] Hit physics object
+[2021.05.06-20.31.19:118][715]LogBlueprintUserMessages: [BP_Projectile_C_6] Hit physics object
+[2021.05.06-20.31.19:286][725]LogBlueprintUserMessages: [BP_Projectile_C_7] Hit physics object
+[2021.05.06-20.31.19:769][754]LogBlueprintUserMessages: [BP_Projectile_C_10] Hit physics object
+[2021.05.06-20.31.20:036][770]LogBlueprintUserMessages: [BP_Projectile_C_12] Hit physics object
+[2021.05.06-20.31.20:169][778]LogBlueprintUserMessages: [BP_Projectile_C_13] Hit physics object
+[2021.05.06-20.31.20:485][797]LogBlueprintUserMessages: [BP_Projectile_C_15] Hit physics object
+[2021.05.06-20.31.20:636][806]LogBlueprintUserMessages: [BP_Projectile_C_16] Hit physics object
+[2021.05.06-20.31.21:086][833]LogBlueprintUserMessages: [BP_Projectile_C_19] Hit physics object
+[2021.05.06-20.31.21:219][841]LogBlueprintUserMessages: [BP_Projectile_C_20] Hit physics object
+[2021.05.06-20.31.21:851][879]LogBlueprintUserMessages: [BP_Projectile_C_24] Hit physics object
+[2021.05.06-20.31.23:569][982]LogBlueprintUserMessages: [BP_Projectile_C_31] Hit physics object
+[2021.05.06-20.31.24:303][ 26]LogBlueprintUserMessages: [BP_Projectile_C_34] Hit physics object
+[2021.05.06-20.31.25:319][ 87]LogBlueprintUserMessages: [BP_Projectile_C_40] Hit physics object
+[2021.05.06-20.31.25:469][ 96]LogBlueprintUserMessages: [BP_Projectile_C_41] Hit physics object
+[2021.05.06-20.31.28:969][306]LogBlueprintUserMessages: [BP_Projectile_C_60] Hit physics object
+[2021.05.06-20.31.30:169][378]LogBlueprintUserMessages: [BP_Projectile_C_66] Hit physics object
+[2021.05.06-20.31.31:468][456]LogBlueprintUserMessages: [BP_Projectile_C_72] Hit physics object
+[2021.05.06-20.31.31:702][470]LogBlueprintUserMessages: [BP_Projectile_C_73] Hit physics object
+[2021.05.06-20.31.32:402][512]LogBlueprintUserMessages: [BP_Projectile_C_75] Hit physics object
+[2021.05.06-20.31.32:736][532]LogBlueprintUserMessages: [BP_Projectile_C_77] Hit physics object
+[2021.05.06-20.31.33:270][564]LogBlueprintUserMessages: [BP_Projectile_C_79] Hit physics object
+[2021.05.06-20.31.33:403][572]LogBlueprintUserMessages: [BP_Projectile_C_80] Hit physics object
+[2021.05.06-20.31.34:085][613]LogBlueprintUserMessages: [BP_Projectile_C_83] Hit physics object
+[2021.05.06-20.31.34:302][626]LogBlueprintUserMessages: [BP_Projectile_C_84] Hit physics object
+[2021.05.06-20.31.35:602][704]LogBlueprintUserMessages: [BP_Projectile_C_91] Hit physics object
+[2021.05.06-20.31.37:369][810]LogBlueprintUserMessages: [BP_Projectile_C_98] Hit physics object
+[2021.05.06-20.31.47:819][427]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.31.47:819][427]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.31.47:819][427]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.31.47:820][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.31.47:828][427]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.31.47:841][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.31.47:870][427]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.31.47:870][427]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.31.47:872][427]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.31.47:904][427]LogUObjectHash: Compacting FUObjectHashTables data took   3.39ms
+[2021.05.06-20.31.48:040][428]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2021.05.06-20.33.59:758][666]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.33.59:864][666]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.33.59:864][666]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:33:59 PM)
+[2021.05.06-20.33.59:864][666]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.33.59:866][666]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002064s)
+[2021.05.06-20.33.59:867][666]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.33.59:868][666]LogPlayLevel: PIE: World Init took: (0.001592s)
+[2021.05.06-20.33.59:868][666]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.003766s)
+[2021.05.06-20.33.59:902][666]LogUObjectHash: Compacting FUObjectHashTables data took   4.31ms
+[2021.05.06-20.33.59:909][666]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2021.05.06-20.33.59:909][666]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.33.59:909][666]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.33.59:909][666]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.33.59:909][666]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.33.59:909][666]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.33.59:909][666]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.33.59:909][666]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.33.59:909][666]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.33.59:910][666]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.33.59:910][666]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.33.59:912][666]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.33.59:912][666]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.33.59:912][666]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.33.59:913][666]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.33.59:913][666]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.33.59:913][666]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.33.59:913][666]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.33.59:913][666]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.33.59:938][666]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.33.59:938][666]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.33.59:938][666]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.33.59:938][666]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.33.59:939][666]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.33.59:939][666]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.33.59:939][666]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.33.59:952][666]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.33.59:952][666]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.33.59:952][666]LogInit: FAudioDevice initialized.
+[2021.05.06-20.33.59:952][666]LogAudio: Display: Audio Device (ID: 22) registered with world 'mainlevel'.
+[2021.05.06-20.33.59:961][666]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.33.59:963][666]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.33.59
+[2021.05.06-20.33.59:963][666]LogWorld: Bringing up level for play took: 0.000609
+[2021.05.06-20.33.59:963][666]LogOnline: OSS: Creating online subsystem instance for: :Context_45
+[2021.05.06-20.33.59:967][666]PIE: Server logged in
+[2021.05.06-20.33.59:968][666]PIE: Play in editor total start time 0.104 seconds.
+[2021.05.06-20.34.01:994][787]LogBlueprintUserMessages: [BP_MyCharacter_C_0] sadgfsfdg
+[2021.05.06-20.34.03:561][881]LogBlueprintUserMessages: [BP_Projectile_C_4] Hit physics object
+[2021.05.06-20.34.03:694][889]LogBlueprintUserMessages: [BP_Projectile_C_5] Hit physics object
+[2021.05.06-20.34.05:494][997]LogBlueprintUserMessages: [BP_Projectile_C_13] Hit physics object
+[2021.05.06-20.34.05:977][ 26]LogBlueprintUserMessages: [BP_Projectile_C_16] Hit physics object
+[2021.05.06-20.34.06:694][ 69]LogBlueprintUserMessages: [BP_Projectile_C_17] Hit physics object
+[2021.05.06-20.34.07:044][ 90]LogBlueprintUserMessages: [BP_Projectile_C_19] Hit physics object
+[2021.05.06-20.34.07:777][134]LogBlueprintUserMessages: [BP_Projectile_C_23] Hit physics object
+[2021.05.06-20.34.08:695][189]LogBlueprintUserMessages: [BP_Projectile_C_28] Hit physics object
+[2021.05.06-20.34.08:844][198]LogBlueprintUserMessages: [BP_Projectile_C_29] Hit physics object
+[2021.05.06-20.34.09:061][211]LogBlueprintUserMessages: [BP_Projectile_C_30] Hit physics object
+[2021.05.06-20.34.09:194][219]LogBlueprintUserMessages: [BP_Projectile_C_31] Hit physics object
+[2021.05.06-20.34.09:845][258]LogBlueprintUserMessages: [BP_Projectile_C_34] Hit physics object
+[2021.05.06-20.34.11:145][336]LogBlueprintUserMessages: [BP_Projectile_C_40] Hit physics object
+[2021.05.06-20.34.11:311][346]LogBlueprintUserMessages: [BP_Projectile_C_41] Hit physics object
+[2021.05.06-20.34.12:128][395]LogBlueprintUserMessages: [BP_Projectile_C_46] Hit physics object
+[2021.05.06-20.34.12:562][421]LogBlueprintUserMessages: [BP_Projectile_C_48] Hit physics object
+[2021.05.06-20.34.13:578][482]LogBlueprintUserMessages: [BP_Projectile_C_53] Hit physics object
+[2021.05.06-20.34.14:713][550]LogBlueprintUserMessages: [BP_Projectile_C_59] Hit physics object
+[2021.05.06-20.34.15:345][588]LogBlueprintUserMessages: [BP_Projectile_C_62] Hit physics object
+[2021.05.06-20.34.15:528][599]LogBlueprintUserMessages: [BP_Projectile_C_63] Hit physics object
+[2021.05.06-20.34.15:695][609]LogBlueprintUserMessages: [BP_Projectile_C_64] Hit physics object
+[2021.05.06-20.34.19:595][843]LogBlueprintUserMessages: [BP_Projectile_C_70] Hit physics object
+[2021.05.06-20.34.20:111][874]LogBlueprintUserMessages: [BP_Projectile_C_73] Hit physics object
+[2021.05.06-20.34.21:311][946]LogBlueprintUserMessages: [BP_Projectile_C_79] Hit physics object
+[2021.05.06-20.34.22:628][ 25]LogBlueprintUserMessages: [BP_Projectile_C_81] Hit physics object
+[2021.05.06-20.34.22:794][ 35]LogBlueprintUserMessages: [BP_Projectile_C_82] Hit physics object
+[2021.05.06-20.34.23:328][ 67]LogBlueprintUserMessages: [BP_Projectile_C_85] Hit physics object
+[2021.05.06-20.34.23:878][100]LogBlueprintUserMessages: [BP_Projectile_C_87] Hit physics object
+[2021.05.06-20.34.24:661][147]LogBlueprintUserMessages: [BP_Projectile_C_92] Hit physics object
+[2021.05.06-20.34.24:778][154]LogBlueprintUserMessages: [BP_Projectile_C_93] Hit physics object
+[2021.05.06-20.34.25:612][204]LogBlueprintUserMessages: [BP_Projectile_C_96] Hit physics object
+[2021.05.06-20.34.25:762][213]LogBlueprintUserMessages: [BP_Projectile_C_97] Hit physics object
+[2021.05.06-20.34.25:978][226]LogBlueprintUserMessages: [BP_Projectile_C_98] Hit physics object
+[2021.05.06-20.34.26:328][247]LogBlueprintUserMessages: [BP_Projectile_C_99] Hit physics object
+[2021.05.06-20.34.32:069][583]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.34.32:069][583]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.34.32:069][583]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.34.32:069][583]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.34.32:079][583]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.34.32:089][583]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.34.32:119][583]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.34.32:120][583]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.34.32:120][583]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.34.32:158][583]LogUObjectHash: Compacting FUObjectHashTables data took   3.37ms
+[2021.05.06-20.34.32:226][584]LogPlayLevel: Display: Destroying online subsystem :Context_45
+[2021.05.06-20.34.58:113][727]LogHotReload: New module detected: UE4Editor-SkeetShootGame-0012.dll
+[2021.05.06-20.34.58:804][730]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.06-20.34.58:867][730]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SkeetShootGame' in 0.0003 seconds. Added 2 classes and 2 folders.
+[2021.05.06-20.34.58:873][730]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2021.05.06-20.34.59:004][730]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0100 seconds. Added 3603 classes and 861 folders.
+[2021.05.06-20.34.59:007][730]Display: HotReload took  0.2s.
+[2021.05.06-20.35.04:876][802]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.35.04:982][802]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.35.04:982][802]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:35:04 PM)
+[2021.05.06-20.35.04:982][802]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.35.04:984][802]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001837s)
+[2021.05.06-20.35.04:985][802]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.35.04:985][802]LogPlayLevel: PIE: World Init took: (0.001451s)
+[2021.05.06-20.35.04:985][802]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.003405s)
+[2021.05.06-20.35.05:059][802]LogUObjectHash: Compacting FUObjectHashTables data took   5.21ms
+[2021.05.06-20.35.05:062][802]LogAudio: Display: Creating Audio Device:                 Id: 23, Scope: Unique, Realtime: True
+[2021.05.06-20.35.05:062][802]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.35.05:062][802]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.35.05:062][802]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.35.05:062][802]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.35.05:062][802]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.35.05:062][802]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.35.05:062][802]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.35.05:062][802]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.35.05:063][802]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.35.05:063][802]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.35.05:066][802]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.35.05:066][802]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.35.05:066][802]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.35.05:066][802]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.35.05:066][802]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.35.05:066][802]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.35.05:066][802]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.35.05:066][802]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.35.05:092][802]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.35.05:092][802]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.35.05:093][802]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.35.05:093][802]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.35.05:093][802]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.35.05:093][802]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.35.05:093][802]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.35.05:107][802]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.35.05:107][802]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.35.05:107][802]LogInit: FAudioDevice initialized.
+[2021.05.06-20.35.05:107][802]LogAudio: Display: Audio Device (ID: 23) registered with world 'mainlevel'.
+[2021.05.06-20.35.05:114][802]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.35.05:115][802]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.35.05
+[2021.05.06-20.35.05:115][802]LogWorld: Bringing up level for play took: 0.000573
+[2021.05.06-20.35.05:115][802]LogOnline: OSS: Creating online subsystem instance for: :Context_46
+[2021.05.06-20.35.05:118][802]PIE: Server logged in
+[2021.05.06-20.35.05:119][802]PIE: Play in editor total start time 0.138 seconds.
+[2021.05.06-20.35.07:113][922]LogBlueprintUserMessages: [BP_MyCharacter_C_0] fA
+[2021.05.06-20.35.08:647][ 14]LogBlueprintUserMessages: [BP_Projectile_C_1] Hit physics object
+[2021.05.06-20.35.08:997][ 35]LogBlueprintUserMessages: [BP_Projectile_C_3] Hit physics object
+[2021.05.06-20.35.09:314][ 54]LogBlueprintUserMessages: [BP_Projectile_C_5] Hit physics object
+[2021.05.06-20.35.09:481][ 64]LogBlueprintUserMessages: [BP_Projectile_C_6] Hit physics object
+[2021.05.06-20.35.09:613][ 72]LogBlueprintUserMessages: [BP_Projectile_C_7] Hit physics object
+[2021.05.06-20.35.09:763][ 81]LogBlueprintUserMessages: [BP_Projectile_C_8] Hit physics object
+[2021.05.06-20.35.09:897][ 89]LogBlueprintUserMessages: [BP_Projectile_C_9] Hit physics object
+[2021.05.06-20.35.30:111][299]LogBlueprintUserMessages: [BP_Projectile_C_12] Hit physics object
+[2021.05.06-20.35.39:970][883]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.35.39:970][883]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.35.39:970][883]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.35.39:970][883]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.35.39:976][883]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.35.39:986][883]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.35.40:016][883]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-20.35.40:016][883]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.35.40:017][883]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.35.40:037][883]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.35.40:043][883]LogUObjectHash: Compacting FUObjectHashTables data took   4.11ms
+[2021.05.06-20.35.40:168][884]LogPlayLevel: Display: Destroying online subsystem :Context_46
+[2021.05.06-20.37.13:552][750]LogHotReload: New module detected: UE4Editor-SkeetShootGame-0013.dll
+[2021.05.06-20.37.14:237][753]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.06-20.37.14:288][753]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SkeetShootGame' in 0.0003 seconds. Added 2 classes and 2 folders.
+[2021.05.06-20.37.14:294][753]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2021.05.06-20.37.14:419][753]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0079 seconds. Added 3603 classes and 861 folders.
+[2021.05.06-20.37.14:421][753]Display: HotReload took  0.2s.
+[2021.05.06-20.37.20:011][822]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.37.20:117][822]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.37.20:117][822]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:37:20 PM)
+[2021.05.06-20.37.20:148][822]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.37.20:150][822]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001899s)
+[2021.05.06-20.37.20:151][822]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.37.20:151][822]LogPlayLevel: PIE: World Init took: (0.001251s)
+[2021.05.06-20.37.20:151][822]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.003276s)
+[2021.05.06-20.37.20:229][822]LogUObjectHash: Compacting FUObjectHashTables data took   5.32ms
+[2021.05.06-20.37.20:232][822]LogAudio: Display: Creating Audio Device:                 Id: 24, Scope: Unique, Realtime: True
+[2021.05.06-20.37.20:232][822]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.37.20:232][822]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.37.20:232][822]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.37.20:232][822]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.37.20:232][822]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.37.20:232][822]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.37.20:232][822]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.37.20:232][822]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.37.20:232][822]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.37.20:232][822]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.37.20:235][822]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.37.20:235][822]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.37.20:235][822]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.37.20:235][822]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.37.20:235][822]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.37.20:235][822]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.37.20:235][822]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.37.20:236][822]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.37.20:261][822]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.37.20:262][822]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.37.20:262][822]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.37.20:262][822]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.37.20:262][822]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.37.20:262][822]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.37.20:262][822]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.37.20:280][822]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.37.20:280][822]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.37.20:280][822]LogInit: FAudioDevice initialized.
+[2021.05.06-20.37.20:280][822]LogAudio: Display: Audio Device (ID: 24) registered with world 'mainlevel'.
+[2021.05.06-20.37.20:291][822]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.37.20:292][822]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.37.20
+[2021.05.06-20.37.20:292][822]LogWorld: Bringing up level for play took: 0.000627
+[2021.05.06-20.37.20:293][822]LogOnline: OSS: Creating online subsystem instance for: :Context_47
+[2021.05.06-20.37.20:296][822]PIE: Server logged in
+[2021.05.06-20.37.20:297][822]PIE: Play in editor total start time 0.181 seconds.
+[2021.05.06-20.37.22:259][940]LogBlueprintUserMessages: [BP_MyCharacter_C_0] gsrkju
+[2021.05.06-20.37.23:443][ 11]LogBlueprintUserMessages: [BP_Projectile_C_3] Hit physics object
+[2021.05.06-20.37.25:511][135]LogBlueprintUserMessages: [BP_Projectile_C_14] Hit physics object
+[2021.05.06-20.37.25:677][145]LogBlueprintUserMessages: [BP_Projectile_C_15] Hit physics object
+[2021.05.06-20.37.27:259][240]LogBlueprintUserMessages: [BP_Projectile_C_22] Hit physics object
+[2021.05.06-20.37.27:727][268]LogBlueprintUserMessages: [BP_Projectile_C_25] Hit physics object
+[2021.05.06-20.37.28:044][287]LogBlueprintUserMessages: [BP_Projectile_C_27] Hit physics object
+[2021.05.06-20.37.28:978][343]LogBlueprintUserMessages: [BP_Projectile_C_32] Hit physics object
+[2021.05.06-20.37.29:793][392]LogBlueprintUserMessages: [BP_Projectile_C_37] Hit physics object
+[2021.05.06-20.37.29:960][402]LogBlueprintUserMessages: [BP_Projectile_C_38] Hit physics object
+[2021.05.06-20.37.30:427][430]LogBlueprintUserMessages: [BP_Projectile_C_41] Hit physics object
+[2021.05.06-20.37.30:777][451]LogBlueprintUserMessages: [BP_Projectile_C_43] Hit physics object
+[2021.05.06-20.37.31:410][489]LogBlueprintUserMessages: [BP_Projectile_C_47] Hit physics object
+[2021.05.06-20.37.31:593][500]LogBlueprintUserMessages: [BP_Projectile_C_48] Hit physics object
+[2021.05.06-20.37.31:761][510]LogBlueprintUserMessages: [BP_Projectile_C_49] Hit physics object
+[2021.05.06-20.37.31:945][521]LogBlueprintUserMessages: [BP_Projectile_C_50] Hit physics object
+[2021.05.06-20.37.32:243][539]LogBlueprintUserMessages: [BP_Projectile_C_52] Hit physics object
+[2021.05.06-20.37.32:394][548]LogBlueprintUserMessages: [BP_Projectile_C_53] Hit physics object
+[2021.05.06-20.37.32:576][559]LogBlueprintUserMessages: [BP_Projectile_C_54] Hit physics object
+[2021.05.06-20.37.32:810][573]LogBlueprintUserMessages: [BP_Projectile_C_55] Hit physics object
+[2021.05.06-20.37.32:978][583]LogBlueprintUserMessages: [BP_Projectile_C_56] Hit physics object
+[2021.05.06-20.37.33:245][599]LogBlueprintUserMessages: [BP_Projectile_C_58] Hit physics object
+[2021.05.06-20.37.33:494][614]LogBlueprintUserMessages: [BP_Projectile_C_59] Hit physics object
+[2021.05.06-20.37.33:678][625]LogBlueprintUserMessages: [BP_Projectile_C_60] Hit physics object
+[2021.05.06-20.37.33:794][632]LogBlueprintUserMessages: [BP_Projectile_C_61] Hit physics object
+[2021.05.06-20.37.33:961][642]LogBlueprintUserMessages: [BP_Projectile_C_62] Hit physics object
+[2021.05.06-20.37.34:195][656]LogBlueprintUserMessages: [BP_Projectile_C_63] Hit physics object
+[2021.05.06-20.37.34:946][701]LogBlueprintUserMessages: [BP_Projectile_C_68] Hit physics object
+[2021.05.06-20.37.35:460][732]LogBlueprintUserMessages: [BP_Projectile_C_71] Hit physics object
+[2021.05.06-20.37.35:694][746]LogBlueprintUserMessages: [BP_Projectile_C_72] Hit physics object
+[2021.05.06-20.37.35:860][756]LogBlueprintUserMessages: [BP_Projectile_C_73] Hit physics object
+[2021.05.06-20.37.36:477][793]LogBlueprintUserMessages: [BP_Projectile_C_77] Hit physics object
+[2021.05.06-20.37.36:660][804]LogBlueprintUserMessages: [BP_Projectile_C_78] Hit physics object
+[2021.05.06-20.37.37:376][847]LogBlueprintUserMessages: [BP_Projectile_C_82] Hit physics object
+[2021.05.06-20.37.37:544][857]LogBlueprintUserMessages: [BP_Projectile_C_83] Hit physics object
+[2021.05.06-20.37.38:878][937]LogBlueprintUserMessages: [BP_Projectile_C_90] Hit physics object
+[2021.05.06-20.37.39:227][958]LogBlueprintUserMessages: [BP_Projectile_C_92] Hit physics object
+[2021.05.06-20.37.39:477][973]LogBlueprintUserMessages: [BP_Projectile_C_93] Hit physics object
+[2021.05.06-20.37.39:943][  1]LogBlueprintUserMessages: [BP_Projectile_C_96] Hit physics object
+[2021.05.06-20.37.40:160][ 14]LogBlueprintUserMessages: [BP_Projectile_C_97] Hit physics object
+[2021.05.06-20.37.40:860][ 56]LogBlueprintUserMessages: [BP_Projectile_C_101] Hit physics object
+[2021.05.06-20.37.41:127][ 72]LogBlueprintUserMessages: [BP_Projectile_C_103] Hit physics object
+[2021.05.06-20.37.41:793][112]LogBlueprintUserMessages: [BP_Projectile_C_107] Hit physics object
+[2021.05.06-20.37.41:961][122]LogBlueprintUserMessages: [BP_Projectile_C_108] Hit physics object
+[2021.05.06-20.37.42:360][146]LogBlueprintUserMessages: [BP_Projectile_C_110] Hit physics object
+[2021.05.06-20.37.42:560][158]LogBlueprintUserMessages: [BP_Projectile_C_111] Hit physics object
+[2021.05.06-20.37.42:661][164]LogBlueprintUserMessages: [BP_Projectile_C_112] Hit physics object
+[2021.05.06-20.37.44:811][293]LogBlueprintUserMessages: [BP_Projectile_C_120] Hit physics object
+[2021.05.06-20.37.45:110][311]LogBlueprintUserMessages: [BP_Projectile_C_122] Hit physics object
+[2021.05.06-20.37.45:277][321]LogBlueprintUserMessages: [BP_Projectile_C_123] Hit physics object
+[2021.05.06-20.37.46:361][386]LogBlueprintUserMessages: [BP_Projectile_C_129] Hit physics object
+[2021.05.06-20.37.46:610][401]LogBlueprintUserMessages: [BP_Projectile_C_131] Hit physics object
+[2021.05.06-20.37.46:794][412]LogBlueprintUserMessages: [BP_Projectile_C_132] Hit physics object
+[2021.05.06-20.37.46:927][420]LogBlueprintUserMessages: [BP_Projectile_C_133] Hit physics object
+[2021.05.06-20.37.55:069][907]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.37.55:069][907]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.37.55:069][907]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.37.55:070][907]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.37.55:074][907]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.37.55:088][907]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.37.55:120][907]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-20.37.55:128][907]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.37.55:129][907]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.37.55:154][907]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.37.55:176][907]LogUObjectHash: Compacting FUObjectHashTables data took   4.54ms
+[2021.05.06-20.37.55:250][908]LogPlayLevel: Display: Destroying online subsystem :Context_47
+[2021.05.06-20.38.02:711][120]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.38.02:717][120]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.38.02:717][120]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:38:02 PM)
+[2021.05.06-20.38.02:718][120]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.38.02:720][120]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001942s)
+[2021.05.06-20.38.02:720][120]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.38.02:721][120]LogPlayLevel: PIE: World Init took: (0.000812s)
+[2021.05.06-20.38.02:721][120]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.002851s)
+[2021.05.06-20.38.02:756][120]LogUObjectHash: Compacting FUObjectHashTables data took   3.12ms
+[2021.05.06-20.38.02:757][120]LogAudio: Display: Creating Audio Device:                 Id: 25, Scope: Unique, Realtime: True
+[2021.05.06-20.38.02:757][120]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.38.02:757][120]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.38.02:757][120]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.38.02:757][120]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.38.02:757][120]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.38.02:757][120]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.38.02:757][120]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.38.02:757][120]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.38.02:758][120]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.38.02:758][120]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.38.02:761][120]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.38.02:761][120]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.38.02:761][120]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.38.02:761][120]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.38.02:761][120]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.38.02:761][120]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.38.02:761][120]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.38.02:761][120]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.38.02:786][120]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.38.02:786][120]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.38.02:787][120]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.38.02:787][120]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.38.02:787][120]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.38.02:787][120]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.38.02:787][120]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.38.02:804][120]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.38.02:804][120]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.38.02:804][120]LogInit: FAudioDevice initialized.
+[2021.05.06-20.38.02:804][120]LogAudio: Display: Audio Device (ID: 25) registered with world 'mainlevel'.
+[2021.05.06-20.38.02:813][120]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.38.02:814][120]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.38.02
+[2021.05.06-20.38.02:814][120]LogWorld: Bringing up level for play took: 0.000546
+[2021.05.06-20.38.02:815][120]LogOnline: OSS: Creating online subsystem instance for: :Context_48
+[2021.05.06-20.38.02:818][120]PIE: Server logged in
+[2021.05.06-20.38.02:818][120]PIE: Play in editor total start time 0.101 seconds.
+[2021.05.06-20.38.05:128][258]LogBlueprintUserMessages: [BP_MyCharacter_C_0] fareg
+[2021.05.06-20.38.06:229][324]LogBlueprintUserMessages: [BP_Projectile_C_3] Hit physics object
+[2021.05.06-20.38.06:595][346]LogBlueprintUserMessages: [BP_Projectile_C_5] Hit physics object
+[2021.05.06-20.38.07:028][372]LogBlueprintUserMessages: [BP_Projectile_C_8] Hit physics object
+[2021.05.06-20.38.07:195][382]LogBlueprintUserMessages: [BP_Projectile_C_9] Hit physics object
+[2021.05.06-20.38.08:899][482]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.38.08:899][482]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.38.08:899][482]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.38.08:900][482]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.38.08:911][482]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.38.08:922][482]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.38.08:952][482]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.38.08:952][482]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.38.08:953][482]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.38.08:976][482]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2021.05.06-20.38.09:110][483]LogPlayLevel: Display: Destroying online subsystem :Context_48
+[2021.05.06-20.38.17:861][931]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/OurContent/Blueprints/BP_GameTimer.BP_GameTimer
+[2021.05.06-20.38.25:682][367]LogSelectionDetails: Warning: NavigateToFunctionSource:  Unable to find symbols for 'UGameplayStatics::GetGameMode' [Element not found.]
+[2021.05.06-20.38.34:277][858]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/OurContent/Blueprints/BP_GameMode.BP_GameMode
+[2021.05.06-20.38.41:463][249]BlueprintLog: New page: Compile BP_GameMode
+[2021.05.06-20.38.41:533][249]LogUObjectHash: Compacting FUObjectHashTables data took   4.19ms
+[2021.05.06-20.38.41:560][249]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/OurContent/Blueprints/BP_GameMode" FILE="D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/BP_GameMode.uasset" SILENT=true
+[2021.05.06-20.38.41:579][249]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/BP_GameMode32946F6142F557C8F0D1C3AFB1DBB6AF.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/BP_GameMode.uasset'
+[2021.05.06-20.38.41:593][249]AssetCheck: New page: Asset Save: BP_GameMode
+[2021.05.06-20.38.41:593][249]LogContentValidation: Display: Validating Blueprint /Game/OurContent/Blueprints/BP_GameMode.BP_GameMode
+[2021.05.06-20.38.42:043][271]LogUObjectHash: Compacting FUObjectHashTables data took   6.07ms
+[2021.05.06-20.38.42:055][271]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/mainlevelCFDFFAC0488F01697644AD9646FC6969.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Maps/mainlevel.umap'
+[2021.05.06-20.38.42:064][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/OurContent/Maps/mainlevel_BuiltData" FILE="D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Maps/mainlevel_BuiltData.uasset" SILENT=true
+[2021.05.06-20.38.42:557][271]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/mainlevel_BuiltDataEAE3129743EAE80EE87B90A31A18FA84.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Maps/mainlevel_BuiltData.uasset'
+[2021.05.06-20.38.42:570][271]AssetCheck: New page: Asset Save: multiple assets
+[2021.05.06-20.38.42:570][271]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/OurContent/Maps/mainlevel_BuiltData.mainlevel_BuiltData
+[2021.05.06-20.38.42:570][271]LogContentValidation: Display: Validating World /Game/OurContent/Maps/mainlevel.mainlevel
+[2021.05.06-20.38.43:168][304]LogUObjectHash: Compacting FUObjectHashTables data took   3.94ms
+[2021.05.06-20.38.43:182][304]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/OurContent/Blueprints/LB_LeaderBoard" FILE="D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/LB_LeaderBoard.uasset" SILENT=true
+[2021.05.06-20.38.43:306][304]LogSavePackage: Moving 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Saved/LB_LeaderBoardE35EF0FB4125A8C3E4467D8FF595ED27.tmp' to 'D:/Repos/GPR-420-01-ConsoleProgramming/SkeetShootGame/Content/OurContent/Blueprints/LB_LeaderBoard.uasset'
+[2021.05.06-20.38.43:329][304]AssetCheck: New page: Asset Save: LB_LeaderBoard
+[2021.05.06-20.38.43:329][304]LogContentValidation: Display: Validating WidgetBlueprint /Game/OurContent/Blueprints/LB_LeaderBoard.LB_LeaderBoard
+[2021.05.06-20.38.47:971][575]BlueprintLog: New page: Compile LB_LeaderBoard
+[2021.05.06-20.38.48:062][575]LogUObjectHash: Compacting FUObjectHashTables data took   4.32ms
+[2021.05.06-20.38.48:612][598]BlueprintLog: New page: Compile LB_LeaderBoard
+[2021.05.06-20.38.48:664][598]LogUObjectHash: Compacting FUObjectHashTables data took   4.24ms
+[2021.05.06-20.38.52:311][802]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.38.52:416][802]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.38.52:416][802]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:38:52 PM)
+[2021.05.06-20.38.52:416][802]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.38.52:418][802]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001966s)
+[2021.05.06-20.38.52:419][802]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.38.52:419][802]LogPlayLevel: PIE: World Init took: (0.000949s)
+[2021.05.06-20.38.52:419][802]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.003031s)
+[2021.05.06-20.38.52:462][802]LogUObjectHash: Compacting FUObjectHashTables data took   5.29ms
+[2021.05.06-20.38.52:464][802]LogAudio: Display: Creating Audio Device:                 Id: 26, Scope: Unique, Realtime: True
+[2021.05.06-20.38.52:464][802]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.38.52:464][802]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.38.52:464][802]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.38.52:464][802]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.38.52:464][802]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.38.52:464][802]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.38.52:464][802]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.38.52:464][802]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.38.52:464][802]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.38.52:464][802]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.38.52:467][802]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.38.52:467][802]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.38.52:467][802]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.38.52:467][802]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.38.52:467][802]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.38.52:467][802]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.38.52:467][802]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.38.52:467][802]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.38.52:492][802]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.38.52:493][802]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.38.52:493][802]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.38.52:493][802]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.38.52:493][802]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.38.52:493][802]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.38.52:493][802]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.38.52:507][802]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.38.52:508][802]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.38.52:508][802]LogInit: FAudioDevice initialized.
+[2021.05.06-20.38.52:508][802]LogAudio: Display: Audio Device (ID: 26) registered with world 'mainlevel'.
+[2021.05.06-20.38.52:519][802]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.38.52:520][802]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.38.52
+[2021.05.06-20.38.52:520][802]LogWorld: Bringing up level for play took: 0.000517
+[2021.05.06-20.38.52:520][802]LogOnline: OSS: Creating online subsystem instance for: :Context_52
+[2021.05.06-20.38.52:523][802]PIE: Server logged in
+[2021.05.06-20.38.52:523][802]PIE: Play in editor total start time 0.107 seconds.
+[2021.05.06-20.38.56:119][ 17]LogBlueprintUserMessages: [BP_MyCharacter_C_0] test1
+[2021.05.06-20.38.58:608][164]LogBlueprintUserMessages: [BP_Projectile_C_7] Hit physics object
+[2021.05.06-20.38.58:859][179]LogBlueprintUserMessages: [BP_Projectile_C_9] Hit physics object
+[2021.05.06-20.38.58:991][187]LogBlueprintUserMessages: [BP_Projectile_C_10] Hit physics object
+[2021.05.06-20.38.59:325][207]LogBlueprintUserMessages: [BP_Projectile_C_12] Hit physics object
+[2021.05.06-20.38.59:691][229]LogBlueprintUserMessages: [BP_Projectile_C_14] Hit physics object
+[2021.05.06-20.38.59:841][238]LogBlueprintUserMessages: [BP_Projectile_C_15] Hit physics object
+[2021.05.06-20.39.01:091][313]LogBlueprintUserMessages: [BP_Projectile_C_23] Hit physics object
+[2021.05.06-20.39.01:791][355]LogBlueprintUserMessages: [BP_Projectile_C_27] Hit physics object
+[2021.05.06-20.39.01:958][365]LogBlueprintUserMessages: [BP_Projectile_C_28] Hit physics object
+[2021.05.06-20.39.02:224][381]LogBlueprintUserMessages: [BP_Projectile_C_30] Hit physics object
+[2021.05.06-20.39.02:375][390]LogBlueprintUserMessages: [BP_Projectile_C_31] Hit physics object
+[2021.05.06-20.39.03:892][481]LogBlueprintUserMessages: [BP_Projectile_C_40] Hit physics object
+[2021.05.06-20.39.04:191][499]LogBlueprintUserMessages: [BP_Projectile_C_42] Hit physics object
+[2021.05.06-20.39.04:292][505]LogBlueprintUserMessages: [BP_Projectile_C_43] Hit physics object
+[2021.05.06-20.39.04:759][533]LogBlueprintUserMessages: [BP_Projectile_C_46] Hit physics object
+[2021.05.06-20.39.05:091][553]LogBlueprintUserMessages: [BP_Projectile_C_48] Hit physics object
+[2021.05.06-20.39.05:226][561]LogBlueprintUserMessages: [BP_Projectile_C_49] Hit physics object
+[2021.05.06-20.39.08:349][741]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.39.08:349][741]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.39.08:349][741]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.39.08:350][741]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.39.08:356][741]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.39.08:368][741]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.39.08:405][741]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-20.39.08:405][741]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.39.08:406][741]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.39.08:440][741]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.39.08:445][741]LogUObjectHash: Compacting FUObjectHashTables data took   3.61ms
+[2021.05.06-20.39.08:581][742]LogPlayLevel: Display: Destroying online subsystem :Context_52
+[2021.05.06-20.39.09:223][780]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.39.09:329][780]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.39.09:330][780]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:39:09 PM)
+[2021.05.06-20.39.09:358][780]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.39.09:360][780]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001798s)
+[2021.05.06-20.39.09:361][780]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.39.09:362][780]LogPlayLevel: PIE: World Init took: (0.001256s)
+[2021.05.06-20.39.09:362][780]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.003257s)
+[2021.05.06-20.39.09:403][780]LogUObjectHash: Compacting FUObjectHashTables data took   3.72ms
+[2021.05.06-20.39.09:404][780]LogAudio: Display: Creating Audio Device:                 Id: 27, Scope: Unique, Realtime: True
+[2021.05.06-20.39.09:404][780]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.39.09:404][780]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.39.09:404][780]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.39.09:404][780]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.39.09:404][780]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.39.09:404][780]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.39.09:404][780]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.39.09:404][780]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.39.09:404][780]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.39.09:404][780]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.39.09:408][780]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.39.09:408][780]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.39.09:408][780]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.39.09:408][780]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.39.09:408][780]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.39.09:408][780]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.39.09:408][780]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.39.09:408][780]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.39.09:435][780]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.39.09:435][780]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.39.09:435][780]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.39.09:435][780]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.39.09:435][780]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.39.09:435][780]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.39.09:435][780]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.39.09:450][780]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.39.09:450][780]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.39.09:450][780]LogInit: FAudioDevice initialized.
+[2021.05.06-20.39.09:450][780]LogAudio: Display: Audio Device (ID: 27) registered with world 'mainlevel'.
+[2021.05.06-20.39.09:462][780]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.39.09:463][780]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.39.09
+[2021.05.06-20.39.09:463][780]LogWorld: Bringing up level for play took: 0.000573
+[2021.05.06-20.39.09:463][780]LogOnline: OSS: Creating online subsystem instance for: :Context_53
+[2021.05.06-20.39.09:466][780]PIE: Server logged in
+[2021.05.06-20.39.09:467][780]PIE: Play in editor total start time 0.139 seconds.
+[2021.05.06-20.39.12:779][979]LogBlueprintUserMessages: [BP_MyCharacter_C_0] test2
+[2021.05.06-20.39.13:580][ 27]LogBlueprintUserMessages: [BP_Projectile_C_1] Hit physics object
+[2021.05.06-20.39.13:763][ 38]LogBlueprintUserMessages: [BP_Projectile_C_2] Hit physics object
+[2021.05.06-20.39.13:930][ 48]LogBlueprintUserMessages: [BP_Projectile_C_3] Hit physics object
+[2021.05.06-20.39.14:231][ 66]LogBlueprintUserMessages: [BP_Projectile_C_5] Hit physics object
+[2021.05.06-20.39.15:965][170]LogBlueprintUserMessages: [BP_Projectile_C_12] Hit physics object
+[2021.05.06-20.39.16:197][184]LogBlueprintUserMessages: [BP_Projectile_C_13] Hit physics object
+[2021.05.06-20.39.16:514][203]LogBlueprintUserMessages: [BP_Projectile_C_15] Hit physics object
+[2021.05.06-20.39.16:814][221]LogBlueprintUserMessages: [BP_Projectile_C_17] Hit physics object
+[2021.05.06-20.39.17:398][256]LogBlueprintUserMessages: [BP_Projectile_C_21] Hit physics object
+[2021.05.06-20.39.17:498][262]LogBlueprintUserMessages: [BP_Projectile_C_22] Hit physics object
+[2021.05.06-20.39.17:648][271]LogBlueprintUserMessages: [BP_Projectile_C_23] Hit physics object
+[2021.05.06-20.39.17:798][280]LogBlueprintUserMessages: [BP_Projectile_C_24] Hit physics object
+[2021.05.06-20.39.17:948][289]LogBlueprintUserMessages: [BP_Projectile_C_25] Hit physics object
+[2021.05.06-20.39.18:097][298]LogBlueprintUserMessages: [BP_Projectile_C_26] Hit physics object
+[2021.05.06-20.39.18:398][316]LogBlueprintUserMessages: [BP_Projectile_C_28] Hit physics object
+[2021.05.06-20.39.19:781][399]LogBlueprintUserMessages: [BP_Projectile_C_36] Hit physics object
+[2021.05.06-20.39.19:831][402]LogBlueprintUserMessages: [BP_Projectile_C_37] Hit physics object
+[2021.05.06-20.39.19:998][412]LogBlueprintUserMessages: [BP_Projectile_C_38] Hit physics object
+[2021.05.06-20.39.20:331][432]LogBlueprintUserMessages: [BP_Projectile_C_40] Hit physics object
+[2021.05.06-20.39.20:465][440]LogBlueprintUserMessages: [BP_Projectile_C_41] Hit physics object
+[2021.05.06-20.39.20:798][460]LogBlueprintUserMessages: [BP_Projectile_C_43] Hit physics object
+[2021.05.06-20.39.21:948][529]LogBlueprintUserMessages: [BP_Projectile_C_50] Hit physics object
+[2021.05.06-20.39.22:197][544]LogBlueprintUserMessages: [BP_Projectile_C_51] Hit physics object
+[2021.05.06-20.39.22:415][557]LogBlueprintUserMessages: [BP_Projectile_C_53] Hit physics object
+[2021.05.06-20.39.22:747][577]LogBlueprintUserMessages: [BP_Projectile_C_55] Hit physics object
+[2021.05.06-20.39.30:669][ 50]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.39.30:669][ 50]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.39.30:670][ 50]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.39.30:670][ 50]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.39.30:676][ 50]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.39.30:687][ 50]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.39.30:726][ 50]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.39.30:726][ 50]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.39.30:727][ 50]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.39.30:749][ 50]LogUObjectHash: Compacting FUObjectHashTables data took   3.39ms
+[2021.05.06-20.39.30:882][ 51]LogPlayLevel: Display: Destroying online subsystem :Context_53
+[2021.05.06-20.39.31:657][ 97]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.39.31:762][ 97]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.39.31:762][ 97]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:39:31 PM)
+[2021.05.06-20.39.31:762][ 97]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.39.31:764][ 97]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001763s)
+[2021.05.06-20.39.31:765][ 97]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.39.31:765][ 97]LogPlayLevel: PIE: World Init took: (0.001126s)
+[2021.05.06-20.39.31:765][ 97]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.002977s)
+[2021.05.06-20.39.31:806][ 97]LogUObjectHash: Compacting FUObjectHashTables data took   4.95ms
+[2021.05.06-20.39.31:807][ 97]LogAudio: Display: Creating Audio Device:                 Id: 28, Scope: Unique, Realtime: True
+[2021.05.06-20.39.31:807][ 97]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.39.31:807][ 97]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.39.31:807][ 97]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.39.31:807][ 97]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.39.31:807][ 97]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.39.31:808][ 97]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.39.31:808][ 97]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.39.31:808][ 97]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.39.31:808][ 97]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.39.31:808][ 97]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.39.31:811][ 97]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.39.31:811][ 97]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.39.31:811][ 97]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.39.31:811][ 97]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.39.31:811][ 97]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.39.31:811][ 97]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.39.31:811][ 97]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.39.31:811][ 97]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.39.31:837][ 97]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.39.31:838][ 97]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.39.31:838][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.39.31:838][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.39.31:838][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.39.31:838][ 97]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.39.31:838][ 97]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.39.31:853][ 97]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.39.31:853][ 97]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.39.31:853][ 97]LogInit: FAudioDevice initialized.
+[2021.05.06-20.39.31:853][ 97]LogAudio: Display: Audio Device (ID: 28) registered with world 'mainlevel'.
+[2021.05.06-20.39.31:862][ 97]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.39.31:864][ 97]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.39.31
+[2021.05.06-20.39.31:864][ 97]LogWorld: Bringing up level for play took: 0.000723
+[2021.05.06-20.39.31:864][ 97]LogOnline: OSS: Creating online subsystem instance for: :Context_54
+[2021.05.06-20.39.31:868][ 97]PIE: Server logged in
+[2021.05.06-20.39.31:868][ 97]PIE: Play in editor total start time 0.107 seconds.
+[2021.05.06-20.39.35:167][294]LogBlueprintUserMessages: [BP_MyCharacter_C_0] test3
+[2021.05.06-20.39.36:268][360]LogBlueprintUserMessages: [BP_Projectile_C_5] Hit physics object
+[2021.05.06-20.39.36:435][370]LogBlueprintUserMessages: [BP_Projectile_C_6] Hit physics object
+[2021.05.06-20.39.36:586][379]LogBlueprintUserMessages: [BP_Projectile_C_7] Hit physics object
+[2021.05.06-20.39.37:935][460]LogBlueprintUserMessages: [BP_Projectile_C_14] Hit physics object
+[2021.05.06-20.39.38:085][469]LogBlueprintUserMessages: [BP_Projectile_C_15] Hit physics object
+[2021.05.06-20.39.38:185][475]LogBlueprintUserMessages: [BP_Projectile_C_16] Hit physics object
+[2021.05.06-20.39.38:351][485]LogBlueprintUserMessages: [BP_Projectile_C_17] Hit physics object
+[2021.05.06-20.39.38:785][511]LogBlueprintUserMessages: [BP_Projectile_C_20] Hit physics object
+[2021.05.06-20.39.39:018][525]LogBlueprintUserMessages: [BP_Projectile_C_21] Hit physics object
+[2021.05.06-20.39.39:102][530]LogBlueprintUserMessages: [BP_Projectile_C_22] Hit physics object
+[2021.05.06-20.39.39:252][539]LogBlueprintUserMessages: [BP_Projectile_C_23] Hit physics object
+[2021.05.06-20.39.39:468][552]LogBlueprintUserMessages: [BP_Projectile_C_24] Hit physics object
+[2021.05.06-20.39.40:285][601]LogBlueprintUserMessages: [BP_Projectile_C_30] Hit physics object
+[2021.05.06-20.39.40:418][609]LogBlueprintUserMessages: [BP_Projectile_C_31] Hit physics object
+[2021.05.06-20.39.41:352][665]LogBlueprintUserMessages: [BP_Projectile_C_37] Hit physics object
+[2021.05.06-20.39.41:517][675]LogBlueprintUserMessages: [BP_Projectile_C_38] Hit physics object
+[2021.05.06-20.39.41:668][684]LogBlueprintUserMessages: [BP_Projectile_C_39] Hit physics object
+[2021.05.06-20.39.42:252][719]LogBlueprintUserMessages: [BP_Projectile_C_43] Hit physics object
+[2021.05.06-20.39.42:418][729]LogBlueprintUserMessages: [BP_Projectile_C_44] Hit physics object
+[2021.05.06-20.39.42:602][740]LogBlueprintUserMessages: [BP_Projectile_C_45] Hit physics object
+[2021.05.06-20.39.42:834][754]LogBlueprintUserMessages: [BP_Projectile_C_46] Hit physics object
+[2021.05.06-20.39.42:918][759]LogBlueprintUserMessages: [BP_Projectile_C_47] Hit physics object
+[2021.05.06-20.39.43:169][774]LogBlueprintUserMessages: [BP_Projectile_C_48] Hit physics object
+[2021.05.06-20.39.43:351][785]LogBlueprintUserMessages: [BP_Projectile_C_49] Hit physics object
+[2021.05.06-20.39.43:535][796]LogBlueprintUserMessages: [BP_Projectile_C_50] Hit physics object
+[2021.05.06-20.39.43:935][820]LogBlueprintUserMessages: [BP_Projectile_C_53] Hit physics object
+[2021.05.06-20.39.44:118][831]LogBlueprintUserMessages: [BP_Projectile_C_54] Hit physics object
+[2021.05.06-20.39.44:269][840]LogBlueprintUserMessages: [BP_Projectile_C_55] Hit physics object
+[2021.05.06-20.39.44:418][849]LogBlueprintUserMessages: [BP_Projectile_C_56] Hit physics object
+[2021.05.06-20.39.45:069][888]LogBlueprintUserMessages: [BP_Projectile_C_60] Hit physics object
+[2021.05.06-20.39.45:464][909]LogBlueprintUserMessages: [BP_Projectile_C_62] Hit physics object
+[2021.05.06-20.39.45:565][915]LogBlueprintUserMessages: [BP_Projectile_C_63] Hit physics object
+[2021.05.06-20.39.50:969][235]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.39.50:969][235]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.39.50:969][235]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.39.50:969][235]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.39.50:978][235]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.39.50:989][235]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.39.51:026][235]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-20.39.51:026][235]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.39.51:027][235]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.39.51:060][235]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.39.51:066][235]LogUObjectHash: Compacting FUObjectHashTables data took   3.11ms
+[2021.05.06-20.39.51:201][236]LogPlayLevel: Display: Destroying online subsystem :Context_54
+[2021.05.06-20.39.52:647][321]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.39.52:751][321]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.39.52:751][321]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:39:52 PM)
+[2021.05.06-20.39.52:751][321]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.39.52:753][321]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001668s)
+[2021.05.06-20.39.52:754][321]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.39.52:754][321]LogPlayLevel: PIE: World Init took: (0.001251s)
+[2021.05.06-20.39.52:755][321]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.003022s)
+[2021.05.06-20.39.52:795][321]LogUObjectHash: Compacting FUObjectHashTables data took   3.52ms
+[2021.05.06-20.39.52:796][321]LogAudio: Display: Creating Audio Device:                 Id: 29, Scope: Unique, Realtime: True
+[2021.05.06-20.39.52:796][321]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.39.52:796][321]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.39.52:796][321]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.39.52:796][321]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.39.52:796][321]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.39.52:796][321]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.39.52:796][321]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.39.52:796][321]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.39.52:797][321]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.39.52:797][321]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.39.52:800][321]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.39.52:800][321]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.39.52:800][321]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.39.52:800][321]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.39.52:800][321]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.39.52:800][321]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.39.52:800][321]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.39.52:800][321]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.39.52:826][321]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.39.52:826][321]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.39.52:826][321]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.39.52:826][321]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.39.52:826][321]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.39.52:826][321]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.39.52:826][321]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.39.52:840][321]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.39.52:841][321]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.39.52:841][321]LogInit: FAudioDevice initialized.
+[2021.05.06-20.39.52:841][321]LogAudio: Display: Audio Device (ID: 29) registered with world 'mainlevel'.
+[2021.05.06-20.39.52:851][321]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.39.52:852][321]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.39.52
+[2021.05.06-20.39.52:852][321]LogWorld: Bringing up level for play took: 0.000522
+[2021.05.06-20.39.52:852][321]LogOnline: OSS: Creating online subsystem instance for: :Context_55
+[2021.05.06-20.39.52:856][321]PIE: Server logged in
+[2021.05.06-20.39.52:856][321]PIE: Play in editor total start time 0.105 seconds.
+[2021.05.06-20.39.56:418][534]LogBlueprintUserMessages: [BP_MyCharacter_C_0] test4
+[2021.05.06-20.39.58:768][675]LogBlueprintUserMessages: [BP_Projectile_C_6] Hit physics object
+[2021.05.06-20.39.58:985][688]LogBlueprintUserMessages: [BP_Projectile_C_7] Hit physics object
+[2021.05.06-20.39.59:086][694]LogBlueprintUserMessages: [BP_Projectile_C_8] Hit physics object
+[2021.05.06-20.39.59:219][702]LogBlueprintUserMessages: [BP_Projectile_C_9] Hit physics object
+[2021.05.06-20.39.59:385][712]LogBlueprintUserMessages: [BP_Projectile_C_10] Hit physics object
+[2021.05.06-20.39.59:869][741]LogBlueprintUserMessages: [BP_Projectile_C_13] Hit physics object
+[2021.05.06-20.40.00:019][750]LogBlueprintUserMessages: [BP_Projectile_C_14] Hit physics object
+[2021.05.06-20.40.00:234][763]LogBlueprintUserMessages: [BP_Projectile_C_15] Hit physics object
+[2021.05.06-20.40.00:319][768]LogBlueprintUserMessages: [BP_Projectile_C_16] Hit physics object
+[2021.05.06-20.40.00:535][781]LogBlueprintUserMessages: [BP_Projectile_C_17] Hit physics object
+[2021.05.06-20.40.01:118][816]LogBlueprintUserMessages: [BP_Projectile_C_21] Hit physics object
+[2021.05.06-20.40.01:235][823]LogBlueprintUserMessages: [BP_Projectile_C_22] Hit physics object
+[2021.05.06-20.40.01:401][833]LogBlueprintUserMessages: [BP_Projectile_C_23] Hit physics object
+[2021.05.06-20.40.01:835][859]LogBlueprintUserMessages: [BP_Projectile_C_26] Hit physics object
+[2021.05.06-20.40.02:347][888]LogBlueprintUserMessages: [BP_Projectile_C_29] Hit physics object
+[2021.05.06-20.40.02:546][900]LogBlueprintUserMessages: [BP_Projectile_C_30] Hit physics object
+[2021.05.06-20.40.03:230][941]LogBlueprintUserMessages: [BP_Projectile_C_34] Hit physics object
+[2021.05.06-20.40.03:331][947]LogBlueprintUserMessages: [BP_Projectile_C_35] Hit physics object
+[2021.05.06-20.40.05:314][ 66]LogBlueprintUserMessages: [BP_Projectile_C_40] Hit physics object
+[2021.05.06-20.40.15:469][668]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.40.15:469][668]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.40.15:469][668]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.40.15:470][668]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.40.15:474][668]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.40.15:485][668]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.40.15:525][668]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.40.15:525][668]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.40.15:526][668]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.40.15:569][668]LogUObjectHash: Compacting FUObjectHashTables data took   3.85ms
+[2021.05.06-20.40.15:705][669]LogPlayLevel: Display: Destroying online subsystem :Context_55
+[2021.05.06-20.49.19:802][608]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.49.19:908][608]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.49.19:909][608]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:49:19 PM)
+[2021.05.06-20.49.19:937][608]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.49.19:940][608]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002854s)
+[2021.05.06-20.49.19:942][608]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.49.19:942][608]LogPlayLevel: PIE: World Init took: (0.001518s)
+[2021.05.06-20.49.19:942][608]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.004610s)
+[2021.05.06-20.49.19:987][608]LogUObjectHash: Compacting FUObjectHashTables data took   3.71ms
+[2021.05.06-20.49.19:990][608]LogAudio: Display: Creating Audio Device:                 Id: 30, Scope: Unique, Realtime: True
+[2021.05.06-20.49.19:990][608]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.49.19:990][608]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.49.19:990][608]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.49.19:990][608]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.49.19:990][608]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.49.19:990][608]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.49.19:990][608]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.49.19:990][608]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.49.19:991][608]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.49.19:991][608]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.49.19:994][608]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.49.19:994][608]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.49.19:994][608]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.49.19:994][608]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.49.19:994][608]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.49.19:994][608]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.49.19:994][608]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.49.19:994][608]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.49.20:021][608]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.49.20:022][608]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.49.20:022][608]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.49.20:022][608]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.49.20:023][608]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.49.20:023][608]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.49.20:023][608]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.49.20:036][608]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.49.20:036][608]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.49.20:036][608]LogInit: FAudioDevice initialized.
+[2021.05.06-20.49.20:036][608]LogAudio: Display: Audio Device (ID: 30) registered with world 'mainlevel'.
+[2021.05.06-20.49.20:047][608]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.49.20:048][608]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.49.20
+[2021.05.06-20.49.20:048][608]LogWorld: Bringing up level for play took: 0.000609
+[2021.05.06-20.49.20:048][608]LogOnline: OSS: Creating online subsystem instance for: :Context_56
+[2021.05.06-20.49.20:051][608]PIE: Server logged in
+[2021.05.06-20.49.20:052][608]PIE: Play in editor total start time 0.144 seconds.
+[2021.05.06-20.49.23:697][827]LogBlueprintUserMessages: [BP_MyCharacter_C_0] sdfg
+[2021.05.06-20.49.26:313][984]LogBlueprintUserMessages: [BP_Projectile_C_9] Hit physics object
+[2021.05.06-20.49.26:464][993]LogBlueprintUserMessages: [BP_Projectile_C_10] Hit physics object
+[2021.05.06-20.49.26:663][  5]LogBlueprintUserMessages: [BP_Projectile_C_11] Hit physics object
+[2021.05.06-20.49.26:981][ 24]LogBlueprintUserMessages: [BP_Projectile_C_13] Hit physics object
+[2021.05.06-20.49.27:446][ 52]LogBlueprintUserMessages: [BP_Projectile_C_16] Hit physics object
+[2021.05.06-20.49.27:598][ 61]LogBlueprintUserMessages: [BP_Projectile_C_17] Hit physics object
+[2021.05.06-20.49.27:980][ 84]LogBlueprintUserMessages: [BP_Projectile_C_19] Hit physics object
+[2021.05.06-20.49.28:164][ 95]LogBlueprintUserMessages: [BP_Projectile_C_20] Hit physics object
+[2021.05.06-20.49.28:330][105]LogBlueprintUserMessages: [BP_Projectile_C_21] Hit physics object
+[2021.05.06-20.49.29:448][172]LogBlueprintUserMessages: [BP_Projectile_C_28] Hit physics object
+[2021.05.06-20.49.29:581][180]LogBlueprintUserMessages: [BP_Projectile_C_29] Hit physics object
+[2021.05.06-20.49.30:514][236]LogBlueprintUserMessages: [BP_Projectile_C_34] Hit physics object
+[2021.05.06-20.49.30:580][240]LogBlueprintUserMessages: [BP_Projectile_C_35] Hit physics object
+[2021.05.06-20.49.32:531][357]LogBlueprintUserMessages: [BP_Projectile_C_45] Hit physics object
+[2021.05.06-20.49.51:278][473]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.49.51:278][473]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.49.51:279][473]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.49.51:279][473]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.49.51:290][473]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.49.51:303][473]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.49.51:340][473]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.49.51:341][473]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.49.51:341][473]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.49.51:382][473]LogUObjectHash: Compacting FUObjectHashTables data took   2.97ms
+[2021.05.06-20.49.51:478][474]LogPlayLevel: Display: Destroying online subsystem :Context_56
+[2021.05.06-20.52.56:562][904]LogHotReload: New module detected: UE4Editor-SkeetShootGame-0015.dll
+[2021.05.06-20.52.57:253][907]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.06-20.52.57:310][907]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SkeetShootGame' in 0.0002 seconds. Added 2 classes and 2 folders.
+[2021.05.06-20.52.57:316][907]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2021.05.06-20.52.57:456][907]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0086 seconds. Added 3603 classes and 861 folders.
+[2021.05.06-20.52.57:458][907]Display: HotReload took  0.2s.
+[2021.05.06-20.53.02:305][ 53]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.06-20.53.02:311][ 53]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-20.53.02:312][ 53]PIE: New page: PIE session: mainlevel (May 6, 2021, 12:53:02 PM)
+[2021.05.06-20.53.02:337][ 53]LogPlayLevel: Creating play world package: /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.53.02:340][ 53]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002663s)
+[2021.05.06-20.53.02:341][ 53]LogAIModule: Creating AISystem for world mainlevel
+[2021.05.06-20.53.02:341][ 53]LogPlayLevel: PIE: World Init took: (0.001143s)
+[2021.05.06-20.53.02:341][ 53]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/OurContent/Maps/mainlevel.mainlevel to /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel (0.003969s)
+[2021.05.06-20.53.02:415][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   6.44ms
+[2021.05.06-20.53.02:418][ 53]LogAudio: Display: Creating Audio Device:                 Id: 31, Scope: Unique, Realtime: True
+[2021.05.06-20.53.02:418][ 53]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-20.53.02:418][ 53]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-20.53.02:418][ 53]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-20.53.02:418][ 53]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-20.53.02:418][ 53]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-20.53.02:418][ 53]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-20.53.02:418][ 53]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-20.53.02:418][ 53]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-20.53.02:418][ 53]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-20.53.02:418][ 53]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-20.53.02:421][ 53]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-20.53.02:421][ 53]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-20.53.02:421][ 53]LogAudioMixer: Display: 2: FrontCenter
+[2021.05.06-20.53.02:421][ 53]LogAudioMixer: Display: 3: LowFrequency
+[2021.05.06-20.53.02:421][ 53]LogAudioMixer: Display: 4: BackLeft
+[2021.05.06-20.53.02:421][ 53]LogAudioMixer: Display: 5: BackRight
+[2021.05.06-20.53.02:421][ 53]LogAudioMixer: Display: 6: SideLeft
+[2021.05.06-20.53.02:421][ 53]LogAudioMixer: Display: 7: SideRight
+[2021.05.06-20.53.02:448][ 53]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2021.05.06-20.53.02:448][ 53]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-20.53.02:448][ 53]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-20.53.02:448][ 53]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-20.53.02:448][ 53]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-20.53.02:448][ 53]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-20.53.02:449][ 53]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.05.06-20.53.02:462][ 53]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-20.53.02:462][ 53]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-20.53.02:462][ 53]LogInit: FAudioDevice initialized.
+[2021.05.06-20.53.02:462][ 53]LogAudio: Display: Audio Device (ID: 31) registered with world 'mainlevel'.
+[2021.05.06-20.53.02:473][ 53]LogLoad: Game class is 'BP_GameMode_C'
+[2021.05.06-20.53.02:474][ 53]LogWorld: Bringing World /Game/OurContent/Maps/UEDPIE_0_mainlevel.mainlevel up for play (max tick rate 60) at 2021.05.06-16.53.02
+[2021.05.06-20.53.02:474][ 53]LogWorld: Bringing up level for play took: 0.000635
+[2021.05.06-20.53.02:474][ 53]LogOnline: OSS: Creating online subsystem instance for: :Context_57
+[2021.05.06-20.53.02:477][ 53]PIE: Server logged in
+[2021.05.06-20.53.02:478][ 53]PIE: Play in editor total start time 0.167 seconds.
+[2021.05.06-20.53.06:007][264]LogBlueprintUserMessages: [BP_MyCharacter_C_0] test6
+[2021.05.06-20.53.07:124][331]LogBlueprintUserMessages: [BP_Projectile_C_2] Hit physics object
+[2021.05.06-20.53.07:258][339]LogBlueprintUserMessages: [BP_Projectile_C_3] Hit physics object
+[2021.05.06-20.53.07:959][381]LogBlueprintUserMessages: [BP_Projectile_C_7] Hit physics object
+[2021.05.06-20.53.08:108][390]LogBlueprintUserMessages: [BP_Projectile_C_8] Hit physics object
+[2021.05.06-20.53.08:291][401]LogBlueprintUserMessages: [BP_Projectile_C_9] Hit physics object
+[2021.05.06-20.53.08:641][422]LogBlueprintUserMessages: [BP_Projectile_C_11] Hit physics object
+[2021.05.06-20.53.09:392][467]LogBlueprintUserMessages: [BP_Projectile_C_16] Hit physics object
+[2021.05.06-20.53.09:609][480]LogBlueprintUserMessages: [BP_Projectile_C_17] Hit physics object
+[2021.05.06-20.53.09:908][498]LogBlueprintUserMessages: [BP_Projectile_C_19] Hit physics object
+[2021.05.06-20.53.09:992][503]LogBlueprintUserMessages: [BP_Projectile_C_20] Hit physics object
+[2021.05.06-20.53.10:209][516]LogBlueprintUserMessages: [BP_Projectile_C_21] Hit physics object
+[2021.05.06-20.53.10:592][539]LogBlueprintUserMessages: [BP_Projectile_C_24] Hit physics object
+[2021.05.06-20.53.11:192][575]LogBlueprintUserMessages: [BP_Projectile_C_28] Hit physics object
+[2021.05.06-20.53.11:342][584]LogBlueprintUserMessages: [BP_Projectile_C_29] Hit physics object
+[2021.05.06-20.53.11:992][623]LogBlueprintUserMessages: [BP_Projectile_C_33] Hit physics object
+[2021.05.06-20.53.13:041][686]LogBlueprintUserMessages: [BP_Projectile_C_38] Hit physics object
+[2021.05.06-20.53.13:224][697]LogBlueprintUserMessages: [BP_Projectile_C_39] Hit physics object
+[2021.05.06-20.53.13:759][729]LogBlueprintUserMessages: [BP_Projectile_C_42] Hit physics object
+[2021.05.06-20.53.13:860][735]LogBlueprintUserMessages: [BP_Projectile_C_43] Hit physics object
+[2021.05.06-20.53.14:375][766]LogBlueprintUserMessages: [BP_Projectile_C_46] Hit physics object
+[2021.05.06-20.53.14:511][774]LogBlueprintUserMessages: [BP_Projectile_C_47] Hit physics object
+[2021.05.06-20.53.22:389][235]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.53.22:389][235]LogWorld: BeginTearingDown for /Game/OurContent/Maps/UEDPIE_0_mainlevel
+[2021.05.06-20.53.22:389][235]LogWorld: UWorld::CleanupWorld for mainlevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-20.53.22:389][235]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.53.22:397][235]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-20.53.22:411][235]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-20.53.22:452][235]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-20.53.22:453][235]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.53.22:453][235]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-20.53.22:471][235]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-20.53.22:477][235]LogUObjectHash: Compacting FUObjectHashTables data took   5.01ms
+[2021.05.06-20.53.22:610][236]LogPlayLevel: Display: Destroying online subsystem :Context_57

@@ -24,5 +24,5 @@ public:
 		static void SortIntArray(UPARAM(ref) TArray<int32> &playerScores, bool descending, TArray<int32> &SortedArray);
 
 	UFUNCTION(BlueprintCallable, Category = "MySort")
-		static void SortPlayerScores(UPARAM(ref) TArray<int32>& playerScores, TArray<int32>& SortedScores, UPARAM(ref) TArray<FString>& playerNames, TArray<FString>& SortedNames);
+		static void SortPlayerScores(UPARAM(ref) TArray<int32> playerScores, TArray<int32>& SortedScores, UPARAM(ref) TArray<FString> playerNames, TArray<FString>& SortedNames);
 };
