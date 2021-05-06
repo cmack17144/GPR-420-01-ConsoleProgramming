@@ -31,29 +31,43 @@ void AMyCharacter::BeginPlay()
 void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	
+
 	// bind movement events
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMyCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMyCharacter::MoveRight);
-	
+
 	// bind look events
-	PlayerInputComponent->BindAxis("LookRight", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("LookRight", this, &AMyCharacter::LookRight);
+	PlayerInputComponent->BindAxis("LookUp", this, &AMyCharacter::LookUp);
 }
 
 void AMyCharacter::MoveForward(float val)
 {
-	if (val != 0.0f)
+	if (bControlsEnabled && val != 0.0f)
 	{
 		// add movement in that direction
-		AddMovementInput(GetActorForwardVector(), val);
+		AddMovementInput(GetActorForwardVector(), val * fMoveSpeed);
 	}
 }
 void AMyCharacter::MoveRight(float val)
 {
-	if (val != 0.0f)
+	if (bControlsEnabled && val != 0.0f)
 	{
 		// add movement in that direction
-		AddMovementInput(GetActorRightVector(), val);
+		AddMovementInput(GetActorRightVector(), val * fMoveSpeed);
+	}
+}
+void AMyCharacter::LookUp(float val)
+{
+	if (bControlsEnabled && val != 0.0f)
+	{
+		AddControllerPitchInput(val);
+	}
+}
+void AMyCharacter::LookRight(float val)
+{
+	if (bControlsEnabled && val != 0.0f)
+	{
+		AddControllerYawInput(val);
 	}
 }

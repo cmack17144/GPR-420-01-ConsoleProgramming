@@ -20,20 +20,27 @@ class SKEETSHOOTGAME_API AMyCharacter : public ACharacter
 public:
 	AMyCharacter();
 
-protected:
-	virtual void BeginPlay();
+	// move speed
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		float fMoveSpeed;
+
+	// if controls are enabled
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		bool bControlsEnabled;
+
+	/** Returns FirstPersonCameraComponent subobject **/
+	UCameraComponent* GetFirstPersonCameraComponent() const { return CameraComponent; }
 
 protected:
+	virtual void BeginPlay();
 
 	void MoveForward(float Val);
 	void MoveRight(float Val);
 
+	void LookUp(float Val);
+	void LookRight(float Val);
 
 	// APawn interface
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 	// End of APawn interface
-
-public:
-	/** Returns FirstPersonCameraComponent subobject **/
-	UCameraComponent* GetFirstPersonCameraComponent() const { return CameraComponent; }
 };

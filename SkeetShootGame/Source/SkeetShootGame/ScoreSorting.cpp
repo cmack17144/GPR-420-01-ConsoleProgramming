@@ -16,21 +16,18 @@ void UScoreSorting::SortIntArray(UPARAM(ref) TArray<int32>& playerScores, bool d
 void UScoreSorting::SortPlayerScores(UPARAM(ref) TArray<int32>& playerScores, TArray<int32>& SortedScores, UPARAM(ref) TArray<FString>& playerNames, TArray<FString>& SortedNames)
 {
 
-	for (int32 i = 0; i < (playerScores.Num() - 1); i++) 
+	for (int32 j = 0; j < (playerScores.Num() - 1); j++)
 	{
-		for (int32 j = 0; j < (playerScores.Num() - 1 - i); j++) 
+		if (playerScores[j] < playerScores[j + 1])
 		{
-			if (playerScores[j] < playerScores[j + 1]) 
-			{
-				int32 val = playerScores[j];
-				FString curName = playerNames[j];
+			int32 val = playerScores[j];
+			FString curName = playerNames[j];
 
-				playerScores[j] = playerScores[j + 1];
-				playerScores[j + 1] = val;
+			playerScores[j] = playerScores[j + 1];
+			playerScores[j + 1] = val;
 
-				playerNames[j] = playerNames[j + 1];
-				playerNames[j + 1] = curName;
-			}
+			playerNames[j] = playerNames[j + 1];
+			playerNames[j + 1] = curName;
 		}
 	}
 
